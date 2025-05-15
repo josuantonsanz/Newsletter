@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block header_subtitle %}Resumen de la Semana: {{ week_identifier }}{% endblock %}
+
+{% block navigation %}
+    {# Ajustar rutas si es necesario, asumiendo que está en archive/ #}
+    <nav>
+        <ul>
+            <li><a href="../index.html">Hoy</a></li>
+            <li><a href="#">Ayer</a></li> {# Placeholder #}
+            <li><a href="#">Esta Semana</a></li> {# Podría ser un enlace a sí mismo o al más reciente #}
+            <li><a href="../archive/index.html">Archivo General</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <p><strong>Resumen correspondiente a la semana: {{ week_identifier }}</strong></p>
+
+    {% if categories %}
+        {% for category_name, items in categories.items() %}
+            {% if items %}
+            <section class="category-section" id="section-weekly-{{ category_name | lower | replace(' ', '-') }}">
+                <h2>{{ category_name }}</h2>
+                {% for item in items %}
+                    <div class="synthesized-item">
+                        <p>{{ item.text | safe }}</p>
+                        {% if item.references %}
+                        <div class="references">
+                            <strong>Fuentes Originales:</strong>
+                            <ul>
+                                {% for ref in item.references %}
+                                <li><a href="{{ ref.url }}" target="_blank" title="{{ ref.title }}">{{ ref.title }}</a> [{{ ref.id }}]</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+                 <div class="feedback-buttons">
+                    <span>¿Te gustó este resumen semanal de {{ category_name }}?</span>
+                    <button onclick="handleFeedback('weekly_{{ category_name }}', 'up')">👍</button>
+                    <button onclick="handleFeedback('weekly_{{ category_name }}', 'down')">👎</button>
+                </div>
+            </section>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No hay contenido para el resumen de esta semana.</p>
+    {% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Misma función de feedback que en daily.html o una adaptada
+    function handleFeedback(sectionId, rating) {
+        console.log(`Feedback Semanal: Sección '${sectionId}', Voto: ${rating}`);
+        alert(`Has votado '${rating === 'up' ? 'Me gusta' : 'No me gusta'}' para el resumen semanal de '${sectionId}'.\nFeedback demostrativo.`);
+        try {
+            let feedbackHistory = JSON.parse(localStorage.getItem('feedDigestWeeklyFeedback')) || {};
+            feedbackHistory[sectionId] = feedbackHistory[sectionId] || {up: 0, down: 0, lastVote: null};
+            feedbackHistory[sectionId][rating]++;
+            feedbackHistory[sectionId].lastVote = new Date().toISOString();
+            localStorage.setItem('feedDigestWeeklyFeedback', JSON.stringify(feedbackHistory));
+        } catch (e) {
+            console.warn("No se pudo guardar el feedback semanal en localStorage:", e);
+        }
+    }
+</script>
+{% endblock %}

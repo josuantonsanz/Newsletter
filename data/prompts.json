@@ -1,0 +1,19 @@
+{
+  "classification": {
+    "default": "Clasifica el siguiente artículo en una de las siguientes categorías: {categories_list}.\n\nTítulo del artículo: \"{title}\"\nExtracto del contenido: \"{short_content}\"\n\nResponde únicamente con el nombre exacto de una de las categorías proporcionadas. Si ninguna categoría parece adecuada, responde con la categoría por defecto: '{default_category}'."
+  },
+  "relevance": {
+    "base": "Evalúa la relevancia del siguiente artículo para la categoría '{category}'.\nConsidera los siguientes criterios específicos para esta categoría:\n{criteria_text}\n\nInformación del artículo:\nTítulo: \"{title}\"\nExtracto: \"{short_content}\"\n\nPregunta: ¿Es este artículo relevante para la categoría '{category}' según los criterios dados? Responde exclusivamente con 'Sí' o 'No'.",
+    "criteria_templates": {
+      "Deportes": "- Equipos de interés principal: {teams_of_interest}. Priorizar noticias sobre estos equipos.\n- Palabras clave de inclusión: {keywords_include}.\n- Palabras clave de exclusión: {keywords_exclude}.",
+      "Tecnología": "- Temas de interés principal: {topics_of_interest}.\n- Palabras clave de exclusión: {keywords_exclude}.\n- Relevancia mínima (subjetiva): {min_relevance_score}",
+      "Religión": "- Tipo de contenido buscado: {content_type}.\n- Tipos de contenido a excluir: {exclude_types}.",
+      "General": "- Interés general basado en actualidad y significancia."
+    },
+    "no_specific_criteria": "No hay criterios específicos adicionales para esta categoría más allá del interés general y la calidad del contenido."
+  },
+  "synthesis": {
+    "default": "Actúa como un editor de noticias conciso. Sintetiza la información esencial de los siguientes artículos de la categoría '{category}' en uno o dos párrafos fluidos (máximo 150 palabras). El tono debe ser informativo y neutro.\n\nArtículos para sintetizar:\n{articles_section}\n\nInstrucciones CRUCIALES para la síntesis:\n1. Integra la información clave de cada artículo.\n2. INMEDIATAMENTE DESPUÉS de una frase o fragmento de información que provenga DIRECTAMENTE de un artículo específico, debes insertar una referencia numérica entre corchetes, por ejemplo: [1]. Esta referencia debe corresponder al número del artículo en la lista original.\n3. Es vital que coloques estas referencias inline, justo después de la información que citan. NO las agrupes todas al final del párrafo.\n4. Ejemplo de cómo hacerlo: 'La empresa X anunció un nuevo producto [1], mientras que la empresa Y reportó ganancias [2]. Algunos analistas opinan que esto es positivo para el sector [1][3].'\n5. No añadas introducciones como 'En esta sección...' o 'Los artículos tratan sobre...'. Ve directo al grano.\n6. Asegúrate de que el párrafo resultante sea coherente y fácil de leer.\n7. No inventes información ni añadas opiniones personales.\n\nSíntesis:",
+    "article_template": "Artículo [{index}]:\nTítulo: {title}\nContenido (primeros ~1000 caracteres): {content}\nURL: {url}\n"
+  }
+}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block header_subtitle %}Edición del {{ date_published }}{% endblock %}
+
+{% block navigation %}
+    {% set root = "." %} {# Para enlaces desde la raíz de output/ o desde archive/YYYY-MM-DD.html #}
+    {% if '../' in nav_links.today_file %} {# Detectar si estamos en el archivo #}
+        {% set root = ".." %}
+    {% endif %}
+    <nav>
+        <ul>
+            <li><a href="{{ root }}/index.html">Hoy</a></li>
+            <li><a href="{{ root }}/{{ nav_links.yesterday_file | default('#') }}">Ayer</a></li> {# Necesita lógica para determinar el archivo de ayer #}
+            <li><a href="{{ root }}/{{ nav_links.this_week_file | default('archive/current_weekly_summary.html') }}">Esta Semana</a></li>
+            <li><a href="{{ root }}/archive/index.html">Archivo</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block content %}
+    <p><strong>Fecha de Publicación: {{ date_published }}</strong></p>
+
+    {% if categories %}
+        {% for category_name, items in categories.items() %}
+            {% if items %}
+            <section class="category-section" id="section-{{ category_name | lower | replace(' ', '-') }}">
+                <h2>{{ category_name }}</h2>
+                {% for item in items %}
+                    <div class="synthesized-item">
+                        <div class="synthesized-item">
+                            {# Aplicar el filtro personalizado. El filtro se encarga de marcar como safe (Markup). #}
+                            <p>{{ item.text_with_placeholders | replace_refs(item.original_articles_details) }}</p>
+                            {# Ya no necesitamos la sección de 'references' separada aquí, a menos que quieras un listado adicional por alguna razón #}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="feedback-buttons">
+                    <span>¿Te gustó esta sección?</span>
+                    <button onclick="handleFeedback('{{ category_name }}', 'up')">👍</button>
+                    <button onclick="handleFeedback('{{ category_name }}', 'down')">👎</button>
+                </div>
+            </section>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>No hay noticias para mostrar hoy. ¡Vuelve mañana!</p>
+    {% endif %}
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function handleFeedback(sectionId, rating) {
+        // Fase 1: Almacenamiento local simple o log a consola.
+        // En una Fase 2, esto podría enviar datos a un backend.
+        console.log(`Feedback: Sección '${sectionId}', Voto: ${rating}`);
+        alert(`Has votado '${rating === 'up' ? 'Me gusta' : 'No me gusta'}' para la sección '${sectionId}'.\nEn Fase 1, este feedback es solo demostrativo o podría guardarse localmente en tu navegador.`);
+
+        // Ejemplo de almacenamiento local (no usado por el backend en Fase 1)
+        try {
+            let feedbackHistory = JSON.parse(localStorage.getItem('feedDigestFeedback')) || {};
+            feedbackHistory[sectionId] = feedbackHistory[sectionId] || {up: 0, down: 0, lastVote: null};
+            feedbackHistory[sectionId][rating]++;
+            feedbackHistory[sectionId].lastVote = new Date().toISOString();
+            localStorage.setItem('feedDigestFeedback', JSON.stringify(feedbackHistory));
+        } catch (e) {
+            console.warn("No se pudo guardar el feedback en localStorage:", e);
+        }
+    }
+</script>
+{% endblock %}

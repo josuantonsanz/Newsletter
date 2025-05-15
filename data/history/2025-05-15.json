@@ -1,0 +1,544 @@
+[
+  {
+    "id": "https://www.bbc.com/news/articles/c5yxwre7d9ko",
+    "title": "Reeves says UK 'beginning to turn corner' as growth beats forecasts",
+    "link": "https://www.bbc.com/news/articles/c5yxwre7d9ko",
+    "published_date": "2025-05-15T10:43:17+00:00",
+    "content_raw": "The economy grew faster than expected between January and March, before UK and US tax rises were brought in during April.",
+    "content_text": "The economy grew faster than expected between January and March, before UK and US tax rises were brought in during April.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cg5v2rjp84ro",
+    "title": "BBC joins Gaza children as they are evacuated to Jordan for treatment",
+    "link": "https://www.bbc.com/news/articles/cg5v2rjp84ro",
+    "published_date": "2025-05-15T05:44:20+00:00",
+    "content_raw": "The BBC's Fergal Keane accompanies children being evacuated from Gaza on their journey to Jordan.",
+    "content_text": "The BBC's Fergal Keane accompanies children being evacuated from Gaza on their journey to Jordan.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/c2lkd2wn815o",
+    "title": "Identity of Diane Sindall's real killer 'was known on estate'",
+    "link": "https://www.bbc.com/news/articles/c2lkd2wn815o",
+    "published_date": "2025-05-15T05:24:16+00:00",
+    "content_raw": "A charity set up after Diane Sindall's murder was told by locals police had the wrong man.",
+    "content_text": "A charity set up after Diane Sindall's murder was told by locals police had the wrong man.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cm23zjknre7o",
+    "title": "Magna Carta 'copy' bought for $28 now believed to be genuine version",
+    "link": "https://www.bbc.com/news/articles/cm23zjknre7o",
+    "published_date": "2025-05-15T04:03:13+00:00",
+    "content_raw": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
+    "content_text": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/ce3vnnyn709o",
+    "title": "US and Iran close to nuclear deal, Trump says",
+    "link": "https://www.bbc.com/news/articles/ce3vnnyn709o",
+    "published_date": "2025-05-15T09:45:50+00:00",
+    "content_raw": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
+    "content_text": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cre9z3133v8o",
+    "title": "Private schools say fees have gone up by 22% in last year",
+    "link": "https://www.bbc.com/news/articles/cre9z3133v8o",
+    "published_date": "2025-05-15T04:57:42+00:00",
+    "content_raw": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
+    "content_text": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/c8re55z8kv7o",
+    "title": "UK to start talks on return hubs for failed asylum seekers",
+    "link": "https://www.bbc.com/news/articles/c8re55z8kv7o",
+    "published_date": "2025-05-15T10:41:01+00:00",
+    "content_raw": "Sir Keir Starmer wants to send asylum seekers abroad after their claims have been rejected in the UK.",
+    "content_text": "Sir Keir Starmer wants to send asylum seekers abroad after their claims have been rejected in the UK.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cdxvzd729xeo",
+    "title": "Police going door-to-door in DNA hunt for parents of abandoned baby Elsa and siblings",
+    "link": "https://www.bbc.com/news/articles/cdxvzd729xeo",
+    "published_date": "2025-05-15T05:00:27+00:00",
+    "content_raw": "The search for parents of three newborn babies, all abandoned after birth, is focused on nearby houses.",
+    "content_text": "The search for parents of three newborn babies, all abandoned after birth, is focused on nearby houses.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/c861w2g71plo",
+    "title": "Radio 2 breakfast audience drops after Zoe Ball's exit",
+    "link": "https://www.bbc.com/news/articles/c861w2g71plo",
+    "published_date": "2025-05-14T23:18:58+00:00",
+    "content_raw": "Scott Mills still has the most popular breakfast show in the UK, attracting 6.5 million listeners.",
+    "content_text": "Scott Mills still has the most popular breakfast show in the UK, attracting 6.5 million listeners.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/c1e679vn6yqo",
+    "title": "Meet the 'invisible crew' who have 35 seconds to prevent a Eurovision blunder",
+    "link": "https://www.bbc.com/news/articles/c1e679vn6yqo",
+    "published_date": "2025-05-15T00:10:44+00:00",
+    "content_raw": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
+    "content_text": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/clyg20822j7o",
+    "title": "'I'm overjoyed to be back': Syrians face daunting rebuild after years of war",
+    "link": "https://www.bbc.com/news/articles/clyg20822j7o",
+    "published_date": "2025-05-15T10:14:26+00:00",
+    "content_raw": "The BBC joins a convoy bringing families back to Homs, which saw some of the fiercest fighting.",
+    "content_text": "The BBC joins a convoy bringing families back to Homs, which saw some of the fiercest fighting.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/ce82ene10p0o",
+    "title": "Construction sites appear in Gaza ahead of Israeli-US aid plan rejected by UN, images show",
+    "link": "https://www.bbc.com/news/articles/ce82ene10p0o",
+    "published_date": "2025-05-15T09:54:59+00:00",
+    "content_raw": "Satellite images show building at sites in south Gaza after US says controversial Israeli aid plan to proceed.",
+    "content_text": "Satellite images show building at sites in south Gaza after US says controversial Israeli aid plan to proceed.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/ckg4zk22n9wo",
+    "title": "Trump's critics and supporters unite against Qatar plane deal",
+    "link": "https://www.bbc.com/news/articles/ckg4zk22n9wo",
+    "published_date": "2025-05-15T00:03:05+00:00",
+    "content_raw": "The White House has doubled down on the proposed deal which has been criticised by some of the president's top supporters.",
+    "content_text": "The White House has doubled down on the proposed deal which has been criticised by some of the president's top supporters.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cwy382w9eglo",
+    "title": "'They yanked their own plug': How Co-op averted an even worse cyber attack",
+    "link": "https://www.bbc.com/news/articles/cwy382w9eglo",
+    "published_date": "2025-05-14T23:25:06+00:00",
+    "content_raw": "The revelation - from the criminals responsible - explains why the Co-op is getting back to business faster than M&amp;S.",
+    "content_text": "The revelation - from the criminals responsible - explains why the Co-op is getting back to business faster than M&S.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/15/south-korea-delays-decision-on-letting-google-move-hi-res-map-data-overseas/",
+    "title": "South Korea delays decision on letting Google move hi-res map data overseas",
+    "link": "https://techcrunch.com/2025/05/15/south-korea-delays-decision-on-letting-google-move-hi-res-map-data-overseas/",
+    "published_date": "2025-05-15T10:40:27+00:00",
+    "content_raw": "South Korea has once again postponed a decision on whether to approve Google&#8217;s request to transfer the high-precision map data it has on the country&#8217;s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country [&#8230;]",
+    "content_text": "South Korea has once again postponed a decision on whether to approve Google’s request to transfer the high-precision map data it has on the country’s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/15/hedra-the-app-used-to-make-talking-baby-podcasts-raises-32m-from-a16z/",
+    "title": "Hedra, the app used to make talking baby podcasts, raises $32M from a16z",
+    "link": "https://techcrunch.com/2025/05/15/hedra-the-app-used-to-make-talking-baby-podcasts-raises-32m-from-a16z/",
+    "published_date": "2025-05-15T10:35:08+00:00",
+    "content_raw": "Hedra, which offers a video generation and editing suite powered by its Character-3 model, has raised $32M.",
+    "content_text": "Hedra, which offers a video generation and editing suite powered by its Character-3 model, has raised $32M.",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/15/harvey-reportedly-in-discussions-to-raise-250m-at-5b-valuation/",
+    "title": "Harvey reportedly in discussions to raise $250M at $5B valuation",
+    "link": "https://techcrunch.com/2025/05/15/harvey-reportedly-in-discussions-to-raise-250m-at-5b-valuation/",
+    "published_date": "2025-05-15T08:12:56+00:00",
+    "content_raw": "Harvey AI is in discussions to raise more than $250 million in a funding round led by Kleiner Perkins and Coatue that would value it at $5 billion, Reuters reported",
+    "content_text": "Harvey AI is in discussions to raise more than $250 million in a funding round led by Kleiner Perkins and Coatue that would value it at $5 billion, Reuters reported",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/billionaire-founder-of-luminar-replaced-as-ceo-following-ethics-inquiry/",
+    "title": "Billionaire founder of Luminar replaced as CEO following ethics inquiry",
+    "link": "https://techcrunch.com/2025/05/14/billionaire-founder-of-luminar-replaced-as-ceo-following-ethics-inquiry/",
+    "published_date": "2025-05-14T23:14:07+00:00",
+    "content_raw": "Austin Russell, who became a billionaire after his lidar startup Luminar went public, appears to be out as CEO, according to the company&#8217;s board. Luminar&#8217;s board announced Wednesday — the same day of its first-quarter earnings report — it had replaced Russell and appointed Paul Ricci to the role. Ricci is the former chairman and [&#8230;]",
+    "content_text": "Austin Russell, who became a billionaire after his lidar startup Luminar went public, appears to be out as CEO, according to the company’s board. Luminar’s board announced Wednesday — the same day of its first-quarter earnings report — it had replaced Russell and appointed Paul Ricci to the role. Ricci is the former chairman and […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/youtube-introduces-an-interactive-product-feed-for-shoppable-tv-ads/",
+    "title": "YouTube introduces an interactive product feed for shoppable TV ads",
+    "link": "https://techcrunch.com/2025/05/14/youtube-introduces-an-interactive-product-feed-for-shoppable-tv-ads/",
+    "published_date": "2025-05-14T21:30:00+00:00",
+    "content_raw": "YouTube made its pitch to advertisers on Wednesday, accompanied by a flashy performance from Lady Gaga and special appearances from popular YouTubers like Brittany Broski and MrBeast.&#160; During its Upfront presentation, YouTube executives introduced new ad formats coming to the platform, including an enhanced shoppable connected TV (CTV) offering that includes a new interactive product [&#8230;]",
+    "content_text": "YouTube made its pitch to advertisers on Wednesday, accompanied by a flashy performance from Lady Gaga and special appearances from popular YouTubers like Brittany Broski and MrBeast.  During its Upfront presentation, YouTube executives introduced new ad formats coming to the platform, including an enhanced shoppable connected TV (CTV) offering that includes a new interactive product […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/youtube-targets-tv-dollars-with-nfl-deal-bingeable-shows-from-creators/",
+    "title": "YouTube targets TV dollars with NFL deal, bingeable ‘shows’ from creators",
+    "link": "https://techcrunch.com/2025/05/14/youtube-targets-tv-dollars-with-nfl-deal-bingeable-shows-from-creators/",
+    "published_date": "2025-05-14T21:30:00+00:00",
+    "content_raw": "YouTube announced a range of initiatives designed to attract more TV ad dollars to its platform at Brandcast, its annual Upfront event for advertisers. Notably, the Google-owned video service is expanding its relationship with the NFL and plans to exclusively stream the NFL&#8217;s first Friday game of the 2025-2026 season. It&#8217;s also preparing to pilot [&#8230;]",
+    "content_text": "YouTube announced a range of initiatives designed to attract more TV ad dollars to its platform at Brandcast, its annual Upfront event for advertisers. Notably, the Google-owned video service is expanding its relationship with the NFL and plans to exclusively stream the NFL’s first Friday game of the 2025-2026 season. It’s also preparing to pilot […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/youtube-viewers-will-start-seeing-ads-after-peak-moments-in-videos/",
+    "title": "YouTube viewers will start seeing ads after ‘peak’ moments in videos",
+    "link": "https://techcrunch.com/2025/05/14/youtube-viewers-will-start-seeing-ads-after-peak-moments-in-videos/",
+    "published_date": "2025-05-14T21:30:00+00:00",
+    "content_raw": "Imagine you’re watching a highly anticipated video from your favorite YouTube creator — perhaps the moment a famous couple finally gets engaged — when an ad pops up immediately after the clip. This is part of YouTube&#8217;s new ad format called &#8220;Peak Points.&#8221; The company revealed the new ad format during its Upfront presentation on [&#8230;]",
+    "content_text": "Imagine you’re watching a highly anticipated video from your favorite YouTube creator — perhaps the moment a famous couple finally gets engaged — when an ad pops up immediately after the clip. This is part of YouTube’s new ad format called “Peak Points.” The company revealed the new ad format during its Upfront presentation on […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/the-latest-apple-maps-update-will-bring-out-your-bougie-side/",
+    "title": "The latest Apple Maps update will bring out your bougie side",
+    "link": "https://techcrunch.com/2025/05/14/the-latest-apple-maps-update-will-bring-out-your-bougie-side/",
+    "published_date": "2025-05-14T20:55:40+00:00",
+    "content_raw": "Apple Maps announced a collaboration with the MICHELIN Guide, The Infatuation, and Golf Digest to help users find recommended restaurants and golf courses in their area. Starting in the U.S., users will be able to filter their Maps searches to see restaurants with MICHELIN ratings, which denote exceptional dining experiences. But if you&#8217;re on the [&#8230;]",
+    "content_text": "Apple Maps announced a collaboration with the MICHELIN Guide, The Infatuation, and Golf Digest to help users find recommended restaurants and golf courses in their area. Starting in the U.S., users will be able to filter their Maps searches to see restaurants with MICHELIN ratings, which denote exceptional dining experiences. But if you’re on the […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/netflix-adds-more-live-tv-to-its-lineup/",
+    "title": "Netflix adds more live TV to its lineup",
+    "link": "https://techcrunch.com/2025/05/14/netflix-adds-more-live-tv-to-its-lineup/",
+    "published_date": "2025-05-14T20:30:25+00:00",
+    "content_raw": "Netflix is adding more livestreaming content, the company announced at its Upfront presentation on Wednesday. The service, which now reaches over 94 million global monthly active users, has been steadily introducing live TV to its audience with sports content from WWE wrestling, comedy, and awards shows, and other special events (some of which definitely didn&#8217;t [&#8230;]",
+    "content_text": "Netflix is adding more livestreaming content, the company announced at its Upfront presentation on Wednesday. The service, which now reaches over 94 million global monthly active users, has been steadily introducing live TV to its audience with sports content from WWE wrestling, comedy, and awards shows, and other special events (some of which definitely didn’t […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/waymo-recalls-1200-robotaxis-following-low-speed-collisions-with-gates-and-chains/",
+    "title": "Waymo recalls 1,200 robotaxis following low-speed collisions with gates and chains",
+    "link": "https://techcrunch.com/2025/05/14/waymo-recalls-1200-robotaxis-following-low-speed-collisions-with-gates-and-chains/",
+    "published_date": "2025-05-14T19:57:55+00:00",
+    "content_raw": "Waymo issued a software recall on 1,200 self-driving vehicles after some of its robotaxis were involved in minor collisions with gates, chains, and other gate-like roadway objects. The software update, which was first reported by Reuters, was conducted late last year, according to documents filed with the National Highway Traffic Safety Administration (NHTSA). The Alphabet-owned [&#8230;]",
+    "content_text": "Waymo issued a software recall on 1,200 self-driving vehicles after some of its robotaxis were involved in minor collisions with gates, chains, and other gate-like roadway objects. The software update, which was first reported by Reuters, was conducted late last year, according to documents filed with the National Highway Traffic Safety Administration (NHTSA). The Alphabet-owned […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/grok-is-unpromptedly-telling-x-users-about-south-african-genocide/",
+    "title": "Grok is unpromptedly telling X users about South African ‘white genocide’",
+    "link": "https://techcrunch.com/2025/05/14/grok-is-unpromptedly-telling-x-users-about-south-african-genocide/",
+    "published_date": "2025-05-14T19:47:01+00:00",
+    "content_raw": "Elon Musk&#8217;s AI chatbot Grok appeared to experience a bug on Wednesday that caused it to reply to dozens of posts on X with information about &#8220;white genocide&#8221; in South Africa, even when the user didn&#8217;t ask anything about the subject. The strange responses stem from the X account for Grok, which replies to users [&#8230;]",
+    "content_text": "Elon Musk’s AI chatbot Grok appeared to experience a bug on Wednesday that caused it to reply to dozens of posts on X with information about “white genocide” in South Africa, even when the user didn’t ask anything about the subject. The strange responses stem from the X account for Grok, which replies to users […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/foxconn-gets-nod-for-435m-project-to-make-more-of-apple-chips-in-india-eventually/",
+    "title": "Foxconn gets nod for $435M project to make more of Apple chips in India, eventually",
+    "link": "https://techcrunch.com/2025/05/14/foxconn-gets-nod-for-435m-project-to-make-more-of-apple-chips-in-india-eventually/",
+    "published_date": "2025-05-14T19:37:15+00:00",
+    "content_raw": "Foxconn, a key manufacturer for Apple, has received an approval from India&#8217;s cabinet to build a new 37 billion Indian rupees ($435 million) semiconductor plant in a joint venture with the country&#8217;s IT giant HCL Group. The deal is the latest move to reduce Apple’s reliance on China and produce more components in India. The [&#8230;]",
+    "content_text": "Foxconn, a key manufacturer for Apple, has received an approval from India’s cabinet to build a new 37 billion Indian rupees ($435 million) semiconductor plant in a joint venture with the country’s IT giant HCL Group. The deal is the latest move to reduce Apple’s reliance on China and produce more components in India. The […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/the-kids-online-safety-act-is-back-with-the-potential-to-change-the-internet/",
+    "title": "The Kids Online Safety Act is back, with the potential to change the internet",
+    "link": "https://techcrunch.com/2025/05/14/the-kids-online-safety-act-is-back-with-the-potential-to-change-the-internet/",
+    "published_date": "2025-05-14T19:14:04+00:00",
+    "content_raw": "The Kids Online Safety Act (KOSA) has been reintroduced into Congress. If passed into law, this bill could impose some of the most significant legislative changes that the internet has seen in the U.S. since the Children&#8217;s Online Privacy Protection Act (COPPA) of 1998. As it currently stands, KOSA would be able to hold social [&#8230;]",
+    "content_text": "The Kids Online Safety Act (KOSA) has been reintroduced into Congress. If passed into law, this bill could impose some of the most significant legislative changes that the internet has seen in the U.S. since the Children’s Online Privacy Protection Act (COPPA) of 1998. As it currently stands, KOSA would be able to hold social […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/openai-brings-its-gpt-4-1-models-to-chatgpt/",
+    "title": "OpenAI brings its GPT-4.1 models to ChatGPT",
+    "link": "https://techcrunch.com/2025/05/14/openai-brings-its-gpt-4-1-models-to-chatgpt/",
+    "published_date": "2025-05-14T18:55:52+00:00",
+    "content_raw": "OpenAI is releasing its GPT-4.1 and GPT-4.1 mini AI models in ChatGPT, the company announced in a post on X Wednesday. The GPT-4.1 models should help software engineers who are using ChatGPT to write or debug code, OpenAI spokesperson Shaokyi Amdo told TechCrunch. GPT-4.1 excels at coding and instruction following compared to GPT-4o, according to [&#8230;]",
+    "content_text": "OpenAI is releasing its GPT-4.1 and GPT-4.1 mini AI models in ChatGPT, the company announced in a post on X Wednesday. The GPT-4.1 models should help software engineers who are using ChatGPT to write or debug code, OpenAI spokesperson Shaokyi Amdo told TechCrunch. GPT-4.1 excels at coding and instruction following compared to GPT-4o, according to […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cj930k9ew74o",
+    "title": "Vegetable plot dig unearths crop of vintage bottles",
+    "link": "https://www.bbc.com/news/articles/cj930k9ew74o",
+    "published_date": "2025-05-14T21:16:03+00:00",
+    "content_raw": "A family looking to plant some vegetables in the garden instead dug up a thousand vintage bottles.",
+    "content_text": "A family looking to plant some vegetables in the garden instead dug up a thousand vintage bottles.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "assigned_category": "Curiosidades"
+  },
+  {
+    "id": "https://elpais.com/deportes/futbol/2025-05-14/la-remontada-de-vallejo-y-jacobo-para-el-madrid-alarga-la-liga.html",
+    "title": "La remontada de Vallejo y Jacobo para el Madrid alarga la Liga",
+    "link": "https://elpais.com/deportes/futbol/2025-05-14/la-remontada-de-vallejo-y-jacobo-para-el-madrid-alarga-la-liga.html",
+    "published_date": "2025-05-14T22:01:25+00:00",
+    "content_raw": "Jacobo Ramón marca el gol de la victoria del Real Madrid ante el Mallorca en el Bernabéu.",
+    "content_text": "Jacobo Ramón marca el gol de la victoria del Real Madrid ante el Mallorca en el Bernabéu.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/futbol/2025-05-15/no-eres-tu-ancelotti-soy-yo.html",
+    "title": "No eres tú, Ancelotti: soy yo",
+    "link": "https://elpais.com/deportes/futbol/2025-05-15/no-eres-tu-ancelotti-soy-yo.html",
+    "published_date": "2025-05-15T03:15:00+00:00",
+    "content_raw": "Carlo Ancelotti durante la rueda de prensa este martes.",
+    "content_text": "Carlo Ancelotti durante la rueda de prensa este martes.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html",
+    "title": "39 tiros del Real Madrid y 26 córner: “Si hubiéramos hecho esto siempre, se podía hacer una temporada mejor”",
+    "link": "https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html",
+    "published_date": "2025-05-14T22:30:49+00:00",
+    "content_raw": "Jacobo Ramón celebra junto a Jesús Vallejo su gol ante el mallorca este miércoles.",
+    "content_text": "Jacobo Ramón celebra junto a Jesús Vallejo su gol ante el mallorca este miércoles.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/futbol/2025-05-14/ferran-torres-es-operado-de-urgencia-de-apendicitis.html",
+    "title": "Ferran Torres es operado de urgencia de apendicitis",
+    "link": "https://elpais.com/deportes/futbol/2025-05-14/ferran-torres-es-operado-de-urgencia-de-apendicitis.html",
+    "published_date": "2025-05-14T21:42:58+00:00",
+    "content_raw": "Ferran Torres, en el último clásico entre el Barcelona y el Madrid.",
+    "content_text": "Ferran Torres, en el último clásico entre el Barcelona y el Madrid.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/baloncesto/2025-05-15/los-timberwolves-avanzan-por-segundo-ano-consecutivo-a-la-final-del-oeste-tras-eliminar-a-golden-state.html",
+    "title": "Los Timberwolves avanzan por segundo año consecutivo a la final del Oeste tras eliminar a Golden State",
+    "link": "https://elpais.com/deportes/baloncesto/2025-05-15/los-timberwolves-avanzan-por-segundo-ano-consecutivo-a-la-final-del-oeste-tras-eliminar-a-golden-state.html",
+    "published_date": "2025-05-15T06:08:20+00:00",
+    "content_raw": "Anthony Edwards celebra el pase a la final de la conferencia tras derrotar a Golden State.",
+    "content_text": "Anthony Edwards celebra el pase a la final de la conferencia tras derrotar a Golden State.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/tenis/2025-05-14/alcaraz-tumba-a-draper-a-base-de-jerarquia.html",
+    "title": "Alcaraz tumba a Draper a base de jerarquía",
+    "link": "https://elpais.com/deportes/tenis/2025-05-14/alcaraz-tumba-a-draper-a-base-de-jerarquia.html",
+    "published_date": "2025-05-14T15:40:40+00:00",
+    "content_raw": "Alcaraz se dispone a devolver la pelota durante el partido contra Draper.",
+    "content_text": "Alcaraz se dispone a devolver la pelota durante el partido contra Draper.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "assigned_category": "Deportes"
+  }
+]

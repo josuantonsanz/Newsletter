@@ -1,0 +1,41 @@
+{
+  "categories": {
+    "Noticias": {
+        "min_relevance_score": 0.5,
+        "keywords_include": [],
+        "keywords_exclude": []
+    },
+    "Deportes": {
+      "teams_of_interest": ["Real Madrid", "Athletic de Bilbao", "Selección Española"],
+      "min_relevance_score": 0.7,
+      "keywords_include": ["fútbol", "tenis", "baloncesto"],
+      "keywords_exclude": ["ajedrez", "curling"]
+    },
+    "Religión": {
+      "content_type": "noticias",
+      "exclude_types": ["opiniones", "carta abierta"],
+      "min_relevance_score": 0.6
+    },
+    "Tecnología": {
+      "topics_of_interest": ["python", "ia", "inteligencia artificial", "programación", "desarrollo web", "ciberseguridad", "technology in general", "youtube", "apple", "microsoft", "google"],
+      "min_relevance_score": 0.65,
+      "keywords_exclude": []
+    },
+    "Música": {
+        "genres_of_interest": ["pop", "indie"],
+        "artists_of_interest": ["Rosalía", "Rigoberta Bandini", "Izaro"],
+        "min_relevance_score": 0.5
+    },
+    "Curiosidades": {
+        "min_relevance_score": 0.4
+    }
+  },
+  "global": {
+    "max_articles_per_category": 20,
+    "min_article_length_chars": 40,
+    "blacklist_keywords_global": ["clickbait", "patrocinado", "publirreportaje", "anuncio"],
+    "categories_order": ["Noticias", "Tecnología", "Religión", "Música", "Curiosidades", "Deportes"],
+    "max_chars_for_relevance_check": 300,
+    "max_chars_for_classification_check": 150
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "name": "BBC News",
+      "default_category": "Noticias",
+      "keywords": [],
+      "blacklist": ["video", "podcast"]
+    },
+    {
+      "url": "https://techcrunch.com/feed/",
+      "name": "TechCrunch",
+      "default_category": "Tecnología",
+      "keywords": [],
+      "blacklist": ["sorteo", "ofertas"]
+    },
+    {
+      "url": "http://www.theverge.com/rss/full.xml",
+      "name": "The Verge",
+      "default_category": "Tecnología",
+      "keywords": [],
+      "blacklist": ["sorteo", "ofertas"]
+    },
+    {
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada",
+      "name": "El País Deportes",
+      "default_category": "Deportes",
+      "keywords": [],
+      "blacklist": []
+    },
+    {
+      "url": "https://www.vaticannews.va/es.rss.xml",
+      "name": "Vatican News",
+      "default_category": "Religión",
+      "keywords": [],
+      "blacklist": []
+    },
+    {
+      "url": "https://www.religiondigital.org/rss/",
+      "name": "Religión digital",
+      "default_category": "Religión",
+      "keywords": [],
+      "blacklist": []
+    },
+    {
+      "url": "https://maggieappleton.com/rss.xml",
+      "name": "Religión digital",
+      "default_category": "Curiosidades",
+      "include_always": true,
+      "keywords": [],
+      "blacklist": []
+    }
+  ]
+}
+

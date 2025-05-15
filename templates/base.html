@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FeedDigest{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        .container { max-width: 900px; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { background-color: #333; color: #fff; padding: 1em 0; text-align: center; }
+        header h1 { margin: 0; }
+        nav ul { list-style-type: none; padding: 0; text-align: center; background-color: #444; margin-bottom: 20px; }
+        nav ul li { display: inline; margin-right: 10px; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 10px 15px; display: inline-block; }
+        nav ul li a:hover { background-color: #555; }
+        .content { padding: 10px; }
+        .category-section { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .category-section h2 { color: #555; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+        .synthesized-item { margin-bottom: 15px; }
+        .synthesized-item p { line-height: 1.6; }
+        .references { margin-top: 10px; font-size: 0.9em; }
+        .references ul { list-style-type: none; padding-left: 0; }
+        .references li { margin-bottom: 5px; }
+        .feedback-buttons button { padding: 5px 10px; margin-right: 5px; cursor: pointer; }
+        footer { text-align: center; padding: 20px; margin-top: 30px; background-color: #333; color: #fff; font-size: 0.9em; }
+        .inline-ref-arrow-only {
+            text-decoration: none;
+            color: #007bff; /* Color del icono/enlace */
+            margin-left: 3px; /* Pequeño espacio antes del icono */
+            margin-right: 3px;/* Pequeño espacio después del icono */
+            /* vertical-align: middle; /* Podrías necesitar ajustar la alineación vertical */
+            /* display: inline-block; */ /* Para un control más fino si es necesario */
+        }
+
+        .inline-ref-arrow-only .ref-icon {
+            font-size: 1em; /* O el tamaño que desees para la flecha */
+            line-height: 1; /* Ayuda a controlar el espaciado vertical */
+        }
+
+        .inline-ref-arrow-only:hover {
+            text-decoration: none; /* Quizás no quieras subrayado en un icono */
+            opacity: 0.7; /* O algún otro efecto hover */
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>FeedDigest</h1>
+        <p>{% block header_subtitle %}Tu resumen de noticias personalizado{% endblock %}</p>
+    </header>
+
+    {% block navigation %}
+    <nav>
+        <ul>
+            <!-- Los enlaces aquí serán dinámicos o fijos según la página -->
+            <li><a href="{{ nav_links.root_path | default('.') }}/index.html">Hoy</a></li>
+            <li><a href="{{ nav_links.root_path | default('.') }}/{{ nav_links.yesterday_file | default('#') }}">Ayer</a></li>
+            <li><a href="{{ nav_links.root_path | default('.') }}/{{ nav_links.this_week_file | default('#') }}">Esta Semana</a></li>
+            <li><a href="{{ nav_links.root_path | default('.') }}/{{ nav_links.archive_index_file | default('archive/index.html') }}">Archivo</a></li>
+        </ul>
+    </nav>
+    {% endblock %}
+
+    <div class="container">
+        <div class="content">
+            {% block content %}
+            <p>Bienvenido a FeedDigest.</p>
+            {% endblock %}
+        </div>
+    </div>
+
+    <footer>
+        <p>© {{ current_year }} FeedDigest. Todos los derechos reservados (o no).</p>
+        <p>Generado el {{ generated_at_datetime }}</p>
+    </footer>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

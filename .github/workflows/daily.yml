@@ -1,0 +1,71 @@
+name: Generar FeedDigest Diario y Semanal
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Todos los días a las 6:00 AM UTC
+  workflow_dispatch: # Permite ejecución manual desde la pestaña Actions
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para hacer commit a gh-pages
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # Asegúrate que coincida con tu desarrollo
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Ejecutar FeedDigest (generación diaria)
+        env:
+          # Si usas API keys para LLMs, configúralas como secrets en GitHub
+          # y pásalas aquí como variables de entorno.
+          # LLM_API_KEY: ${{ secrets.YOUR_LLM_API_KEY_SECRET }}
+        run: python -m feeddigest.src.main # Ejecutar como módulo desde la raíz
+
+      - name: Ejecutar Generador de Resumen Semanal (solo los domingos)
+        if: github.event.schedule == '0 6 * * 0' || github.event_name == 'workflow_dispatch' # Domingo o manual
+        env:
+          # LLM_API_KEY: ${{ secrets.YOUR_LLM_API_KEY_SECRET }}
+        run: python -m feeddigest.src.weekly_summary # Ejecutar como módulo
+
+      - name: Configurar Git
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action-bot@github.com"
+
+      - name: Commitear y Pushear cambios a la rama principal (o gh-pages)
+        run: |
+          git add output/ data/history/ # Añadir output y el historial si se modifica
+          # Comprobar si hay cambios para commitear
+          if ! git diff --cached --quiet; then
+            git commit -m "📰 FeedDigest: Actualización diaria/semanal $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git push
+          else
+            echo "No hay cambios para commitear."
+          fi
+
+      - name: Desplegar a GitHub Pages (si usas una rama gh-pages)
+        # Esta acción es común para desplegar el contenido de una carpeta a la rama gh-pages.
+        # Si tu output/ está en la rama 'main' y sirves desde ahí, este paso puede variar.
+        # Si tu rama de publicación es 'main' y el directorio es 'output',
+        # GitHub Pages podría estar ya configurado para servir desde 'main/output'.
+        # Si es así, el push anterior es suficiente.
+        # Si necesitas mover 'output' al root de 'gh-pages':
+        if: false # Deshabilitado por defecto, ajustar según la estrategia de Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          # publish_branch: gh-pages # Descomentar si usas una rama gh-pages
+          # cname: your.custom.domain.com # Si tienes un dominio personalizado

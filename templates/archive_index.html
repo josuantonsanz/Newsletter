@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Archivo de Ediciones - FeedDigest{% endblock %}
+
+{% block header_subtitle %}Explora ediciones pasadas{% endblock %}
+
+{% block navigation %}
+    {# Ajustar rutas si es necesario, asumiendo que está en archive/ #}
+    <nav>
+        <ul>
+            <li><a href="../index.html">Hoy</a></li>
+            <li><a href="#">Ayer</a></li> {# Placeholder #}
+            <li><a href="#">Esta Semana</a></li> {# Placeholder #}
+            <li><a href="index.html">Archivo (Actual)</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <h2>Archivo de Ediciones Diarias</h2>
+    {% if editions %}
+        <ul>
+            {% for edition in editions %}
+                <li><a href="{{ edition.url }}">{{ edition.date }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>El archivo está vacío por el momento.</p>
+    {% endif %}
+
+    {# Aquí podrías añadir también una lista de resúmenes semanales archivados #}
+    {# <h2>Resúmenes Semanales</h2> ... #}
+{% endblock %}
