@@ -30,7 +30,10 @@ jobs:
         env:
           # Si usas API keys para LLMs, configúralas como secrets en GitHub
           # y pásalas aquí como variables de entorno.
-          # LLM_API_KEY: ${{ secrets.YOUR_LLM_API_KEY_SECRET }}
+          LLM_GEMINI_KEY: ${{ secrets.LLM_GEMINI_KEY }}
+          LLM_MODEL_CLASSIFICATION_ENV: gemma-3-27b-it
+          LLM_MODEL_RELEVANCE_ENV: gemini-2.0-flash
+          LLM_MODEL_SYNTHESIS_ENV: gemini-2.5-flash-preview-04-17
         run: python -m feeddigest.src.main # Ejecutar como módulo desde la raíz
 
       - name: Ejecutar Generador de Resumen Semanal (solo los domingos)
