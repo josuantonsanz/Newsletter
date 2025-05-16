@@ -34,14 +34,7 @@ jobs:
           LLM_MODEL_CLASSIFICATION_ENV: gemma-3-27b-it
           LLM_MODEL_RELEVANCE_ENV: gemini-2.0-flash
           LLM_MODEL_SYNTHESIS_ENV: gemini-2.5-flash-preview-04-17
-        run: python -m feeddigest.src.main # Ejecutar como módulo desde la raíz
-
-      - name: Ejecutar Generador de Resumen Semanal (solo los domingos)
-        if: github.event.schedule == '0 6 * * 0' || github.event_name == 'workflow_dispatch' # Domingo o manual
-        env:
-          # LLM_API_KEY: ${{ secrets.YOUR_LLM_API_KEY_SECRET }}
-        run: python -m feeddigest.src.weekly_summary # Ejecutar como módulo
-
+        run: python -m Newsletter.src.main # Ejecutar como módulo desde la raíz
       - name: Configurar Git
         run: |
           git config --global user.name "GitHub Action Bot"
