@@ -32,16 +32,18 @@
                     <div class="synthesized-item">
                         <div class="synthesized-item">
                             {# Aplicar el filtro personalizado. El filtro se encarga de marcar como safe (Markup). #}
-                            <p>{{ item.text_with_placeholders | replace_refs(item.original_articles_details) }}</p>
+                            <div class="markdown-content">
+                                {{ item.content_html | safe }}
+                            </div>
                             {# Ya no necesitamos la sección de 'references' separada aquí, a menos que quieras un listado adicional por alguna razón #}
                         </div>
                     </div>
                 {% endfor %}
-                <div class="feedback-buttons">
+                <!--<div class="feedback-buttons">
                     <span>¿Te gustó esta sección?</span>
                     <button onclick="handleFeedback('{{ category_name }}', 'up')">👍</button>
                     <button onclick="handleFeedback('{{ category_name }}', 'down')">👎</button>
-                </div>
+                </div>-->
             </section>
             {% endif %}
         {% endfor %}

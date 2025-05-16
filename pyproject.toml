@@ -9,5 +9,6 @@ dependencies = [
     "jinja2>=3.1.6",
     "llm>=0.25",
     "llm-gemini>=0.19.1",
+    "markdown>=3.8",
     "python-dotenv==1.1.0",
 ]

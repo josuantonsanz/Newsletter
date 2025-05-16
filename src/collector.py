@@ -136,7 +136,8 @@ def fetch_articles_from_source(source_config):
             "source_name": source_config.get('name'),
             "default_category": source_config.get('default_category', 'General'),
             "source_keywords": source_config.get('keywords', []),
-            "source_blacklist": source_config.get('blacklist', [])
+            "source_blacklist": source_config.get('blacklist', []),
+            "include_always": source_config.get('include_always', False)
         })
 
     logger.info(

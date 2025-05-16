@@ -31,7 +31,7 @@
     }
   },
   "global": {
-    "max_articles_per_category": 20,
+    "max_articles_per_category": 30,
     "min_article_length_chars": 40,
     "blacklist_keywords_global": ["clickbait", "patrocinado", "publirreportaje", "anuncio"],
     "categories_order": ["Noticias", "Tecnología", "Religión", "Música", "Curiosidades", "Deportes"],

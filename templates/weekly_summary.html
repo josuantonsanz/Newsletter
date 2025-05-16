@@ -26,7 +26,13 @@
                 <h2>{{ category_name }}</h2>
                 {% for item in items %}
                     <div class="synthesized-item">
-                        <p>{{ item.text | safe }}</p>
+                        <div class="markdown-content">
+                            {{ item.content_html | safe }}
+                        </div>
+                        {# If your weekly summary Markdown already includes links for references,
+                           the separate item.references block might be redundant.
+                           If weekly items still have a separate item.references list you want to display,
+                           you can keep that block as is. #}
                         {% if item.references %}
                         <div class="references">
                             <strong>Fuentes Originales:</strong>
@@ -36,7 +42,7 @@
                                 {% endfor %}
                             </ul>
                         </div>
-                        {% endif %}
+                    {% endif %}
                     </div>
                 {% endfor %}
                  <div class="feedback-buttons">

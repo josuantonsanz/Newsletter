@@ -189,21 +189,20 @@ def check_relevance_ia(article, category):
                 f"IA devolvió respuesta no válida ('{answer}') para relevancia de '{title[:50]}'. Asumiendo no relevante. Respuesta LLM: {response.text()}")
             return False  # Fallback a no relevante si la respuesta no es clara
     except Exception as e:
-        logger.error(f"Error en llamada a LLM para relevancia de '{title[:50]}': {e}. Asumiendo no relevante.")
-        return False
+        logger.error(f"Error en llamada a LLM para relevancia de '{title[:50]}': {e}. Asumiendo relevante.")
+        return True
 
 
 def classify_and_filter_articles(articles):
     prefs = get_preferences()
     global_prefs = prefs.get('global', {})
     defined_categories = global_prefs.get("categories_order", list(prefs.get("categories", {}).keys()))
-    logger.info(defined_categories)
-    if not defined_categories:  # Fallback si no hay categorías definidas
+    logger.info(f"Categorías definidas para clasificación: {defined_categories}")
+    if not defined_categories:
         defined_categories = ["General"]
-        logger.info("No se encontraron 'categories_order' o 'categories' en preferences.json. Usando 'General'.")
+        logger.warning("No se encontraron 'categories_order' o 'categories' en preferences.json. Usando 'General'.")
 
     classified_articles = {cat: [] for cat in defined_categories}
-    # Asegurar que 'General' exista si es la única categoría o fallback
     if "General" not in classified_articles and "General" in defined_categories:
         classified_articles["General"] = []
 
@@ -213,38 +212,51 @@ def classify_and_filter_articles(articles):
 
     for article in articles:
         num_processed += 1
-        if not filter_by_rules(article, global_prefs, prefs.get('sources', {}).get(article['source_name'], {})):
-            logger.info(article['title'])
-            num_filtered_rules += 1
-            continue
+        assigned_category = None # Initialize
 
-        default_cat_for_article = article.get('default_category',
-                                              defined_categories[0] if defined_categories else "General")
-        assigned_category = classify_article_ia(article, defined_categories, default_cat_for_article)
-        article['assigned_category'] = assigned_category
+        if article.get('include_always', False):
+            assigned_category = article.get('default_category', defined_categories[0] if defined_categories else "General")
+            article['assigned_category'] = assigned_category
+            logger.info(f"Artículo '{article['title'][:50]}' incluido siempre en '{assigned_category}' por flag 'include_always'.")
+            # Bypasses filter_by_rules, IA classification, and IA relevance.
+        else:
+            # Original logic for articles without 'include_always'
+            if not filter_by_rules(article, global_prefs, prefs.get('sources', {}).get(article['source_name'], {})):
+                logger.debug(f"Artículo '{article['title'][:50]}' filtrado por reglas (Nivel 1).")
+                num_filtered_rules += 1
+                continue
 
-        # Asegurar que la categoría exista en classified_articles antes de la comprobación de relevancia
+            default_cat_for_article = article.get('default_category',
+                                                  defined_categories[0] if defined_categories else "General")
+            assigned_category = classify_article_ia(article, defined_categories, default_cat_for_article)
+            article['assigned_category'] = assigned_category
+
+            if not check_relevance_ia(article, assigned_category):
+                logger.debug(
+                    f"Artículo '{article['title'][:50]}' (cat: {assigned_category}) filtrado por irrelevancia (IA).")
+                num_filtered_relevance += 1
+                continue
+
+        # Common logic for adding to category (applies to both 'include_always' and regular articles)
+        # Ensure the assigned category exists in our main classified_articles dictionary
         if assigned_category not in classified_articles:
-            # Esto puede pasar si la IA devuelve una categoría que no estaba en la lista inicial
-            # (aunque el prompt intenta evitarlo) o si la default_category no estaba.
-            logger.warning(
-                f"Categoría '{assigned_category}' asignada por IA no estaba en la lista predefinida. Añadiéndola.")
-            classified_articles[assigned_category] = []
-            # Opcionalmente, podrías añadirla a defined_categories si quieres que aparezca en la salida
-            # aunque no estuviera en el orden original.
-            # if assigned_category not in defined_categories:
-            # defined_categories.append(assigned_category)
+            if assigned_category in defined_categories: # It's a known category but perhaps empty so far
+                 classified_articles[assigned_category] = []
+            else: # It's a new category (e.g. from 'default_category' of an 'include_always' source not in preferences order)
+                logger.warning(
+                    f"Categoría '{assigned_category}' (de 'include_always' o default) no estaba en 'categories_order'. "
+                    f"Se añadirá al final de la salida. Artículo: {article['title'][:50]}"
+                )
+                classified_articles[assigned_category] = []
+                if assigned_category not in defined_categories: # Add to the order if truly new for iteration
+                    defined_categories.append(assigned_category) # This ensures it's iterated over if it was truly new
 
-        if not check_relevance_ia(article, assigned_category):
-            logger.debug(
-                f"Artículo '{article['title'][:50]}' (cat: {assigned_category}) filtrado por irrelevancia (IA).")
-            num_filtered_relevance += 1
-            continue
-
-        max_articles_cat = prefs.get('categories', {}).get(assigned_category, {}).get('max_articles_per_category',
-                                                                                      global_prefs.get(
-                                                                                          'max_articles_per_category',
-                                                                                          config.MAX_ARTICLES_PER_CATEGORY_DEFAULT))
+        # Determine max articles for this category
+        category_specific_prefs = prefs.get('categories', {}).get(assigned_category, {})
+        max_articles_cat = category_specific_prefs.get('max_articles_per_category',
+                                                        global_prefs.get(
+                                                            'max_articles_per_category',
+                                                            config.MAX_ARTICLES_PER_CATEGORY_DEFAULT))
 
         if len(classified_articles.get(assigned_category, [])) < max_articles_cat:
             classified_articles.setdefault(assigned_category, []).append(article)
@@ -255,11 +267,17 @@ def classify_and_filter_articles(articles):
     logger.info(f"Filtrados por reglas (Nivel 1): {num_filtered_rules}")
     logger.info(f"Filtrados por irrelevancia (Nivel 2 IA): {num_filtered_relevance}")
     for cat, arts in classified_articles.items():
-        if arts:  # Solo mostrar categorías con artículos
+        if arts:
             logger.info(f"Artículos finales en '{cat}': {len(arts)}")
 
-    # Filtrar categorías vacías del resultado final si se desea
-    return {cat: arts for cat, arts in classified_articles.items() if arts}
+    # Return only categories that have articles and are in the defined_categories order
+    # (or were added to defined_categories if from 'include_always' and new)
+    final_ordered_classified_articles = {}
+    for cat_name in defined_categories: # Iterate in the preferred (or augmented) order
+        if cat_name in classified_articles and classified_articles[cat_name]:
+            final_ordered_classified_articles[cat_name] = classified_articles[cat_name]
+
+    return final_ordered_classified_articles
 
 
 if __name__ == '__main__':

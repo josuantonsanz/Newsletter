@@ -13,6 +13,7 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -29,6 +30,7 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -45,54 +47,7 @@
       "video",
       "podcast"
     ],
-    "assigned_category": "Noticias"
-  },
-  {
-    "id": "https://www.bbc.com/news/articles/cm23zjknre7o",
-    "title": "Magna Carta 'copy' bought for $28 now believed to be genuine version",
-    "link": "https://www.bbc.com/news/articles/cm23zjknre7o",
-    "published_date": "2025-05-15T04:03:13+00:00",
-    "content_raw": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
-    "content_text": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
-    "source_name": "BBC News",
-    "default_category": "Noticias",
-    "source_keywords": [],
-    "source_blacklist": [
-      "video",
-      "podcast"
-    ],
-    "assigned_category": "Noticias"
-  },
-  {
-    "id": "https://www.bbc.com/news/articles/ce3vnnyn709o",
-    "title": "US and Iran close to nuclear deal, Trump says",
-    "link": "https://www.bbc.com/news/articles/ce3vnnyn709o",
-    "published_date": "2025-05-15T09:45:50+00:00",
-    "content_raw": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
-    "content_text": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
-    "source_name": "BBC News",
-    "default_category": "Noticias",
-    "source_keywords": [],
-    "source_blacklist": [
-      "video",
-      "podcast"
-    ],
-    "assigned_category": "Noticias"
-  },
-  {
-    "id": "https://www.bbc.com/news/articles/cre9z3133v8o",
-    "title": "Private schools say fees have gone up by 22% in last year",
-    "link": "https://www.bbc.com/news/articles/cre9z3133v8o",
-    "published_date": "2025-05-15T04:57:42+00:00",
-    "content_raw": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
-    "content_text": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
-    "source_name": "BBC News",
-    "default_category": "Noticias",
-    "source_keywords": [],
-    "source_blacklist": [
-      "video",
-      "podcast"
-    ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -109,6 +64,58 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cm23zjknre7o",
+    "title": "Magna Carta 'copy' bought for $28 now believed to be genuine version",
+    "link": "https://www.bbc.com/news/articles/cm23zjknre7o",
+    "published_date": "2025-05-15T04:03:13+00:00",
+    "content_raw": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
+    "content_text": "Harvard Law School paid just $27 for the document, which UK academics now think is the real thing.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/ce3vnnyn709o",
+    "title": "US and Iran close to nuclear deal, Trump says",
+    "link": "https://www.bbc.com/news/articles/ce3vnnyn709o",
+    "published_date": "2025-05-15T09:45:50+00:00",
+    "content_raw": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
+    "content_text": "Speaking in Qatar, the US President said that Iran has \"sort of\" agreed to the terms of a deal.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/cre9z3133v8o",
+    "title": "Private schools say fees have gone up by 22% in last year",
+    "link": "https://www.bbc.com/news/articles/cre9z3133v8o",
+    "published_date": "2025-05-15T10:59:59+00:00",
+    "content_raw": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
+    "content_text": "The Independent School Council says private school fees increased by 22.6% in January compared to a year ago.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -125,6 +132,7 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -141,22 +149,7 @@
       "video",
       "podcast"
     ],
-    "assigned_category": "Noticias"
-  },
-  {
-    "id": "https://www.bbc.com/news/articles/c1e679vn6yqo",
-    "title": "Meet the 'invisible crew' who have 35 seconds to prevent a Eurovision blunder",
-    "link": "https://www.bbc.com/news/articles/c1e679vn6yqo",
-    "published_date": "2025-05-15T00:10:44+00:00",
-    "content_raw": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
-    "content_text": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
-    "source_name": "BBC News",
-    "default_category": "Noticias",
-    "source_keywords": [],
-    "source_blacklist": [
-      "video",
-      "podcast"
-    ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -173,6 +166,24 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.bbc.com/news/articles/c1e679vn6yqo",
+    "title": "Meet the 'invisible crew' who have 35 seconds to prevent a Eurovision blunder",
+    "link": "https://www.bbc.com/news/articles/c1e679vn6yqo",
+    "published_date": "2025-05-15T00:10:44+00:00",
+    "content_raw": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
+    "content_text": "Find out how Eurovision gets one act off the stage and another one in place in under a minute.",
+    "source_name": "BBC News",
+    "default_category": "Noticias",
+    "source_keywords": [],
+    "source_blacklist": [
+      "video",
+      "podcast"
+    ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -189,6 +200,7 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -205,6 +217,38 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.theverge.com/news/667349/forever-chemicals-pfas-drinking-water-rules-epa-trump-rollback",
+    "title": "Trump wants to weaken protections against forever chemicals in drinking water",
+    "link": "https://www.theverge.com/news/667349/forever-chemicals-pfas-drinking-water-rules-epa-trump-rollback",
+    "published_date": "2025-05-14T21:30:54+00:00",
+    "content_raw": "<figure>\n\n<img alt=\"A red tag says “normally closed” and is attached to a valve. A water pipe can be seen behind it.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/gettyimages-1210650864.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>Part of a filtration system designed to filter out forever chemicals from a drinking water supply in Pennsylvania in 2019. | Photo: Getty Images</figcaption>\n</figure>\n<p class=\"has-text-align-none\">The Trump administration <a href=\"https://www.epa.gov/newsreleases/epa-announces-it-will-keep-maximum-contaminant-levels-pfoa-pfos\">plans</a> to weaken drinking water rules meant to protect Americans from “forever chemicals” that have been <a href=\"https://www.atsdr.cdc.gov/pfas/about/health-effects.html?CDC_AAref_Val=https://www.atsdr.cdc.gov/pfas/health-effects/index.html\">linked</a> to cancer, reproductive risks, liver damage, and other health issues. </p>\n\n<p class=\"has-text-align-none\">Last year, the Environmental Protection Agency (EPA) <a href=\"https://www.theverge.com/2024/4/10/24125488/epa-pfas-forever-chemicals-drinking-water-standards\">finalized</a> the nation’s first legally enforceable <a href=\"https://www.epa.gov/newsreleases/biden-harris-administration-finalizes-first-ever-national-drinking-water-standard\">federal drinking water limits</a> on the most common types of forever chemicals. Today, the EPA announced an about-face. The agency now wants to exclude several types of the chemicals from the rule, including so-called GenX substances initially intended to <a href=\"https://ehp.niehs.nih.gov/doi/10.1289/ehp5134\">replace older versions of forever chemicals</a> but that ended up creating new concerns. It also proposed extending compliance deadlines for the two most prevalent forms of forever chemicals, and says it’ll establish a “framework” for more exemptions.</p>\n\n<p class=\"has-text-align-none\">Health and environmental advocates slammed the proposed exclusions and enforcement delays as a threat to Americans. “Today’s decision is a shameful and dangerous capitulation to industry pressure that will allow continued contamination of our drinking water,” Mary Grant, water program director at the nonprofit Food &amp; Water Watch said in a <a href=\"https://www.foodandwaterwatch.org/2025/05/14/bowing-to-industry-pressure-trumps-epa-rolls-back-pfas-protections-for-drinking-water/\">press statement.</a> “This will cost lives.”</p>\n\n<figure class=\"wp-block-pullquote\"><blockquote><p>“A shameful and dangerous capitulation to industry pressure”</p></blockquote></figure>\n\n<p class=\"has-text-align-none\">There are <a href=\"https://comptox.epa.gov/dashboard/chemical-lists/PFASSTRUCT\">thousands</a> of different types of forever chemicals, also known as per- and polyfluoroalkyl substances (PFAS). Companies have used them for decades to make products such as <a href=\"https://www.theatlantic.com/health/archive/2023/02/so-are-nonstick-pans-safe-or-what/672965/\">nonstick pans</a>, <a href=\"https://www.nytimes.com/2022/04/12/us/pfas-chemicals-fast-food.html\">food packaging</a>, and <a href=\"https://www.theverge.com/2022/12/20/23518630/3m-forever-chemicals-pfas-phase-out\">fabric protector</a> water, stain, and heat-resistant. As a result, forever chemicals are estimated to have trickled into at least <a href=\"https://www.usgs.gov/news/national-news-release/tap-water-study-detects-pfas-forever-chemicals-across-us\">45 percent of the nation’s tap water</a> and are present in <a href=\"https://www.atsdr.cdc.gov/pfas/data-research/facts-stats/?CDC_AAref_Val=https://www.atsdr.cdc.gov/pfas/health-effects/us-population.html\">most Americans’ blood streams</a>.</p>\n\n<p class=\"has-text-align-none\">The Biden-era standards set limits for just five widely used types of chemicals: PFOA, PFOS, PFNA, PFHxS, and HFPO-DA (also known as “<a href=\"https://www.epa.gov/chemical-research/human-health-toxicity-assessments-genx-chemicals\">GenX Chemicals</a>”), plus mixtures of several chemicals, including perfluorobutane sulfonic acid (PFBS), found in floor wax, carpeting, and carpet cleaners.&nbsp;</p>\n\n<p class=\"has-text-align-none\">Some manufacturers have already <a href=\"https://www.theverge.com/2022/12/20/23518630/3m-forever-chemicals-pfas-phase-out\">pledged to stop using PFAS</a> after facing a slew of lawsuits. The company 3M agreed to a <a href=\"https://thehill.com/policy/equilibrium-sustainability/5298734-3m-new-jersey-450m-forever-chemicals-settlement-pfas/\">$450 million settlement</a> <a href=\"https://www.njoag.gov/ag-platkin-and-dep-commissioner-latourette-announce-historic-settlement-of-up-to-450-million-with-3m-for-statewide-pfas-contamination/\">with the state of New Jersey</a> on Tuesday over PFAS pollution.&nbsp;</p>\n\n<p class=\"has-text-align-none\">In April, the EPA said it would launch new efforts to study the chemicals and consider guidelines to limit pollution from manufacturers. At the time, <a href=\"https://www.theverge.com/news/658244/forever-chemicals-pfas-drinking-water-standards-epa-trump\">advocacy groups were wary</a> that the agency might simply delay action by calling for more studies — especially as the Trump administration attempts to <a href=\"https://www.theverge.com/environment/652767/elon-musk-trump-tesla-spacex-epa-enforcement\">slash the agency’s staff, budget,</a> and <a href=\"https://www.theverge.com/news/660579/president-trump-budget-slash-science-health-energy-climate-environment\">research department</a>. Advocates have been pushing for drinking water limits <a href=\"https://grist.org/article/the-epa-made-two-big-announcements-this-week-that-could-affect-your-water/\">since President Donald Trump’s first term</a> as a growing body of evidence pointed to the health risks.&nbsp;</p>\n\n<p class=\"has-text-align-none\">Now, it’s clear the agency doesn’t want to enforce existing forever chemical rules for drinking water.&nbsp;</p>\n\n<p class=\"has-text-align-none\">The initial compliance date for those rules was 2029. The EPA now says it only plans to keep limits for PFOA and PFOS, and move the compliance deadline back to 2031 to relieve pressure on small water systems. As their name suggests, <a href=\"https://www.theverge.com/2022/8/18/23311752/pfas-forever-chemicals-clean-up-destruction-research\">forever chemicals are difficult to destroy</a> and the Trump administration says its proposal would save money.</p>\n\n<p class=\"has-text-align-none\">&#8220;This commonsense decision provides the additional time that water system managers need to identify affordable treatment technologies and make sure they are on a sustainable path to compliance,&#8221; National Rural Water Association CEO Matthew Holmes said in the EPA press release.</p>\n\n<p class=\"has-text-align-none\">“We are on a path to uphold the agency’s nationwide standards to protect Americans from PFOA and PFOS in their water. At the same time, we will work to provide common-sense flexibility in the form of additional time for compliance,” EPA Administrator Lee Zeldin said in a <a href=\"https://www.epa.gov/newsreleases/epa-announces-it-will-keep-maximum-contaminant-levels-pfoa-pfos\">press release</a>. The agency says it’ll put out a more detailed proposal “this fall,” with the goal of finalizing the rule in spring 2026.&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+    "content_text": "Part of a filtration system designed to filter out forever chemicals from a drinking water supply in Pennsylvania in 2019. | Photo: Getty Images The Trump administration plans to weaken drinking water rules meant to protect Americans from “forever chemicals” that have been linked to cancer, reproductive risks, liver damage, and other health issues. Last year, the Environmental Protection Agency (EPA) finalized the nation’s first legally enforceable federal drinking water limits on the most common types of forever chemicals. Today, the EPA announced an about-face. The agency now wants to exclude several types of the chemicals from the rule, including so-called GenX substances initially intended to replace older versions of forever chemicals but that ended up creating new concerns. It also proposed extending compliance deadlines for the two most prevalent forms of forever chemicals, and says it’ll establish a “framework” for more exemptions. Health and environmental advocates slammed the proposed exclusions and enforcement delays as a threat to Americans. “Today’s decision is a shameful and dangerous capitulation to industry pressure that will allow continued contamination of our drinking water,” Mary Grant, water program director at the nonprofit Food & Water Watch said in a press statement. “This will cost lives.” “A shameful and dangerous capitulation to industry pressure” There are thousands of different types of forever chemicals, also known as per- and polyfluoroalkyl substances (PFAS). Companies have used them for decades to make products such as nonstick pans , food packaging , and fabric protector water, stain, and heat-resistant. As a result, forever chemicals are estimated to have trickled into at least 45 percent of the nation’s tap water and are present in most Americans’ blood streams . The Biden-era standards set limits for just five widely used types of chemicals: PFOA, PFOS, PFNA, PFHxS, and HFPO-DA (also known as “ GenX Chemicals ”), plus mixtures of several chemicals, including perfluorobutane sulfonic acid (PFBS), found in floor wax, carpeting, and carpet cleaners. Some manufacturers have already pledged to stop using PFAS after facing a slew of lawsuits. The company 3M agreed to a $450 million settlement with the state of New Jersey on Tuesday over PFAS pollution. In April, the EPA said it would launch new efforts to study the chemicals and consider guidelines to limit pollution from manufacturers. At the time, advocacy groups were wary that the agency might simply delay action by calling for more studies — especially as the Trump administration attempts to slash the agency’s staff, budget, and research department . Advocates have been pushing for drinking water limits since President Donald Trump’s first term as a growing body of evidence pointed to the health risks. Now, it’s clear the agency doesn’t want to enforce existing forever chemical rules for drinking water. The initial compliance date for those rules was 2029. The EPA now says it only plans to keep limits for PFOA and PFOS, and move the compliance deadline back to 2031 to relieve pressure on small water systems. As their name suggests, forever chemicals are difficult to destroy and the Trump administration says its proposal would save money. “This commonsense decision provides the additional time that water system managers need to identify affordable treatment technologies and make sure they are on a sustainable path to compliance,” National Rural Water Association CEO Matthew Holmes said in the EPA press release. “We are on a path to uphold the agency’s nationwide standards to protect Americans from PFOA and PFOS in their water. At the same time, we will work to provide common-sense flexibility in the form of additional time for compliance,” EPA Administrator Lee Zeldin said in a press release . The agency says it’ll put out a more detailed proposal “this fall,” with the goal of finalizing the rule in spring 2026.",
+    "source_name": "The Verge",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Noticias"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/mundo/news/2025-05/decenas-muertos-gaza-ataques-israelies-trump-en-oriente-medio.html",
+    "title": "Decenas de muertos en Gaza en ataques israelíes. Trump en Oriente Medio",
+    "link": "https://www.vaticannews.va/es/mundo/news/2025-05/decenas-muertos-gaza-ataques-israelies-trump-en-oriente-medio.html",
+    "published_date": "2025-05-14T12:28:00+00:00",
+    "content_raw": "<p>Tras una orden de evacuación del ejército israelí, los ataques de las Fuerzas de Defensa de Israel (IDF) mataron a decenas de personas en el norte de la Franja. El fin del conflicto en la zona es, mientras tanto, uno de los capítulos que centran la visita del presidente estadounidense Trump a Arabia Saudí, Qatar y Emiratos. La Casa Blanca pone sobre la mesa planes de amplio alcance en los frentes críticos de la zona, empezando por el anuncio del cese de las sanciones a Siria.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/mundo/news/2025-05/decenas-muertos-gaza-ataques-israelies-trump-en-oriente-medio.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "Tras una orden de evacuación del ejército israelí, los ataques de las Fuerzas de Defensa de Israel (IDF) mataron a decenas de personas en el norte de la Franja. El fin del conflicto en la zona es, mientras tanto, uno de los capítulos que centran la visita del presidente estadounidense Trump a Arabia Saudí, Qatar y Emiratos. La Casa Blanca pone sobre la mesa planes de amplio alcance en los frentes críticos de la zona, empezando por el anuncio del cese de las sanciones a Siria. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
     "assigned_category": "Noticias"
   },
   {
@@ -221,6 +265,7 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -228,8 +273,8 @@
     "title": "South Korea delays decision on letting Google move hi-res map data overseas",
     "link": "https://techcrunch.com/2025/05/15/south-korea-delays-decision-on-letting-google-move-hi-res-map-data-overseas/",
     "published_date": "2025-05-15T10:40:27+00:00",
-    "content_raw": "South Korea has once again postponed a decision on whether to approve Google&#8217;s request to transfer the high-precision map data it has on the country&#8217;s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country [&#8230;]",
-    "content_text": "South Korea has once again postponed a decision on whether to approve Google’s request to transfer the high-precision map data it has on the country’s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country […]",
+    "content_raw": "South Korea has once again postponed a decision on whether to approve Google&#8217;s request to transfer high-precision map data on the country&#8217;s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country and also transfer [&#8230;]",
+    "content_text": "South Korea has once again postponed a decision on whether to approve Google’s request to transfer high-precision map data on the country’s geography to its international servers. In February, Google had requested approval from the Korean National Geographic Information Institute to deploy a 1:5,000 scale map on its app in the country and also transfer […]",
     "source_name": "TechCrunch",
     "default_category": "Tecnología",
     "source_keywords": [],
@@ -237,6 +282,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -253,6 +299,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -269,6 +316,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -285,6 +333,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -301,6 +350,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -317,6 +367,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -333,6 +384,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -349,6 +401,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -365,6 +418,7 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
@@ -381,15 +435,16 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
-    "id": "https://techcrunch.com/2025/05/14/grok-is-unpromptedly-telling-x-users-about-south-african-genocide/",
-    "title": "Grok is unpromptedly telling X users about South African ‘white genocide’",
-    "link": "https://techcrunch.com/2025/05/14/grok-is-unpromptedly-telling-x-users-about-south-african-genocide/",
-    "published_date": "2025-05-14T19:47:01+00:00",
-    "content_raw": "Elon Musk&#8217;s AI chatbot Grok appeared to experience a bug on Wednesday that caused it to reply to dozens of posts on X with information about &#8220;white genocide&#8221; in South Africa, even when the user didn&#8217;t ask anything about the subject. The strange responses stem from the X account for Grok, which replies to users [&#8230;]",
-    "content_text": "Elon Musk’s AI chatbot Grok appeared to experience a bug on Wednesday that caused it to reply to dozens of posts on X with information about “white genocide” in South Africa, even when the user didn’t ask anything about the subject. The strange responses stem from the X account for Grok, which replies to users […]",
+    "id": "https://techcrunch.com/2025/05/14/white-house-scraps-plan-to-block-data-brokers-from-selling-americans-sensitive-data/",
+    "title": "White House scraps plan to block data brokers from selling Americans’ sensitive data",
+    "link": "https://techcrunch.com/2025/05/14/white-house-scraps-plan-to-block-data-brokers-from-selling-americans-sensitive-data/",
+    "published_date": "2025-05-14T18:35:20+00:00",
+    "content_raw": "The decision to reverse course comes after an industry lobby group called for the rule change to be withdrawn.",
+    "content_text": "The decision to reverse course comes after an industry lobby group called for the rule change to be withdrawn.",
     "source_name": "TechCrunch",
     "default_category": "Tecnología",
     "source_keywords": [],
@@ -397,15 +452,16 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
-    "id": "https://techcrunch.com/2025/05/14/foxconn-gets-nod-for-435m-project-to-make-more-of-apple-chips-in-india-eventually/",
-    "title": "Foxconn gets nod for $435M project to make more of Apple chips in India, eventually",
-    "link": "https://techcrunch.com/2025/05/14/foxconn-gets-nod-for-435m-project-to-make-more-of-apple-chips-in-india-eventually/",
-    "published_date": "2025-05-14T19:37:15+00:00",
-    "content_raw": "Foxconn, a key manufacturer for Apple, has received an approval from India&#8217;s cabinet to build a new 37 billion Indian rupees ($435 million) semiconductor plant in a joint venture with the country&#8217;s IT giant HCL Group. The deal is the latest move to reduce Apple’s reliance on China and produce more components in India. The [&#8230;]",
-    "content_text": "Foxconn, a key manufacturer for Apple, has received an approval from India’s cabinet to build a new 37 billion Indian rupees ($435 million) semiconductor plant in a joint venture with the country’s IT giant HCL Group. The deal is the latest move to reduce Apple’s reliance on China and produce more components in India. The […]",
+    "id": "https://techcrunch.com/video/how-this-vc-spots-the-global-game-changers/",
+    "title": "How this VC spots the global game changers",
+    "link": "https://techcrunch.com/video/how-this-vc-spots-the-global-game-changers/",
+    "published_date": "2025-05-14T18:30:00+00:00",
+    "content_raw": "Accel&#8217;s Sonali De Rycker chatted with TechCrunch&#8217;s Editor-in-Chief Connie Loizos about what it takes to spot and scale category-defining companies in today&#8217;s fast-evolving tech landscape. She shared perspectives on identifying early-stage bets and supporting global growth.",
+    "content_text": "Accel’s Sonali De Rycker chatted with TechCrunch’s Editor-in-Chief Connie Loizos about what it takes to spot and scale category-defining companies in today’s fast-evolving tech landscape. She shared perspectives on identifying early-stage bets and supporting global growth.",
     "source_name": "TechCrunch",
     "default_category": "Tecnología",
     "source_keywords": [],
@@ -413,15 +469,16 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
-    "id": "https://techcrunch.com/2025/05/14/the-kids-online-safety-act-is-back-with-the-potential-to-change-the-internet/",
-    "title": "The Kids Online Safety Act is back, with the potential to change the internet",
-    "link": "https://techcrunch.com/2025/05/14/the-kids-online-safety-act-is-back-with-the-potential-to-change-the-internet/",
-    "published_date": "2025-05-14T19:14:04+00:00",
-    "content_raw": "The Kids Online Safety Act (KOSA) has been reintroduced into Congress. If passed into law, this bill could impose some of the most significant legislative changes that the internet has seen in the U.S. since the Children&#8217;s Online Privacy Protection Act (COPPA) of 1998. As it currently stands, KOSA would be able to hold social [&#8230;]",
-    "content_text": "The Kids Online Safety Act (KOSA) has been reintroduced into Congress. If passed into law, this bill could impose some of the most significant legislative changes that the internet has seen in the U.S. since the Children’s Online Privacy Protection Act (COPPA) of 1998. As it currently stands, KOSA would be able to hold social […]",
+    "id": "https://techcrunch.com/video/the-future-of-digital-finance-is-customer-centric/",
+    "title": "The future of digital finance is customer-centric",
+    "link": "https://techcrunch.com/video/the-future-of-digital-finance-is-customer-centric/",
+    "published_date": "2025-05-14T18:00:00+00:00",
+    "content_raw": "TS Anil, Monzo&#8217;s CEO, discusses the company&#8217;s innovative approach to customer-centric banking, the strategic decisions that fueled its growth, and insights into the future of digital finance. He shares how he led the digital bank through a remarkable transformation, from early challenges to achieving its first annual profit in 2024.",
+    "content_text": "TS Anil, Monzo’s CEO, discusses the company’s innovative approach to customer-centric banking, the strategic decisions that fueled its growth, and insights into the future of digital finance. He shares how he led the digital bank through a remarkable transformation, from early challenges to achieving its first annual profit in 2024.",
     "source_name": "TechCrunch",
     "default_category": "Tecnología",
     "source_keywords": [],
@@ -429,15 +486,16 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
   },
   {
-    "id": "https://techcrunch.com/2025/05/14/openai-brings-its-gpt-4-1-models-to-chatgpt/",
-    "title": "OpenAI brings its GPT-4.1 models to ChatGPT",
-    "link": "https://techcrunch.com/2025/05/14/openai-brings-its-gpt-4-1-models-to-chatgpt/",
-    "published_date": "2025-05-14T18:55:52+00:00",
-    "content_raw": "OpenAI is releasing its GPT-4.1 and GPT-4.1 mini AI models in ChatGPT, the company announced in a post on X Wednesday. The GPT-4.1 models should help software engineers who are using ChatGPT to write or debug code, OpenAI spokesperson Shaokyi Amdo told TechCrunch. GPT-4.1 excels at coding and instruction following compared to GPT-4o, according to [&#8230;]",
-    "content_text": "OpenAI is releasing its GPT-4.1 and GPT-4.1 mini AI models in ChatGPT, the company announced in a post on X Wednesday. The GPT-4.1 models should help software engineers who are using ChatGPT to write or debug code, OpenAI spokesperson Shaokyi Amdo told TechCrunch. GPT-4.1 excels at coding and instruction following compared to GPT-4o, according to […]",
+    "id": "https://techcrunch.com/video/scaling-innovative-companies-at-the-intersection-of-cybersecurity-ai-and-resilience/",
+    "title": "Scaling innovative companies at the intersection of cybersecurity, AI, and resilience",
+    "link": "https://techcrunch.com/video/scaling-innovative-companies-at-the-intersection-of-cybersecurity-ai-and-resilience/",
+    "published_date": "2025-05-14T17:33:24+00:00",
+    "content_raw": "Paladin Capital Group&#8217;s Nazo Moosa sat down with Mike Butcher at StrictlyVC London to discuss scaling innovative companies at the intersection of cybersecurity, AI, and resilience. She discussed how she&#8217;s driving purposeful investments that shape a secure and sustainable digital future.",
+    "content_text": "Paladin Capital Group’s Nazo Moosa sat down with Mike Butcher at StrictlyVC London to discuss scaling innovative companies at the intersection of cybersecurity, AI, and resilience. She discussed how she’s driving purposeful investments that shape a secure and sustainable digital future.",
     "source_name": "TechCrunch",
     "default_category": "Tecnología",
     "source_keywords": [],
@@ -445,7 +503,359 @@
       "sorteo",
       "ofertas"
     ],
+    "include_always": false,
     "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/radiologists-arent-going-anywhere/",
+    "title": "Radiologists aren’t going anywhere",
+    "link": "https://techcrunch.com/2025/05/14/radiologists-arent-going-anywhere/",
+    "published_date": "2025-05-14T17:28:21+00:00",
+    "content_raw": "Nine years ago, AI pioneer Geoffrey Hinton sent shock waves through medicine by declaring it &#8220;just completely obvious&#8221; that AI would make radiologists extinct in short order. Fast-forward and the specialists &#8212; who do more than analyze images &#8212; are thriving, observes The New York Times. In fact, the field is experiencing explosive growth amid [&#8230;]",
+    "content_text": "Nine years ago, AI pioneer Geoffrey Hinton sent shock waves through medicine by declaring it “just completely obvious” that AI would make radiologists extinct in short order. Fast-forward and the specialists — who do more than analyze images — are thriving, observes The New York Times. In fact, the field is experiencing explosive growth amid […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://techcrunch.com/2025/05/14/soundcloud-backtracks-on-ai-related-terms-of-use-updates/",
+    "title": "SoundCloud backtracks on AI-related terms-of-use updates",
+    "link": "https://techcrunch.com/2025/05/14/soundcloud-backtracks-on-ai-related-terms-of-use-updates/",
+    "published_date": "2025-05-14T17:22:53+00:00",
+    "content_raw": "SoundCloud says it&#8217;s revising its terms after widespread backlash over a clause related to AI model training. Earlier this year, SoundCloud quietly updated its&#160;usage policies, adding wording that many users interpreted as legal cover to allow the company to train AI on audio uploaded to its platform. SoundCloud was quick to assert that it wasn&#8217;t [&#8230;]",
+    "content_text": "SoundCloud says it’s revising its terms after widespread backlash over a clause related to AI model training. Earlier this year, SoundCloud quietly updated its usage policies, adding wording that many users interpreted as legal cover to allow the company to train AI on audio uploaded to its platform. SoundCloud was quick to assert that it wasn’t […]",
+    "source_name": "TechCrunch",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://www.theverge.com/news/667484/apple-eu-ios-app-store-warning-payment-system",
+    "title": "Apple is placing warnings on EU apps that don’t use App Store payments",
+    "link": "https://www.theverge.com/news/667484/apple-eu-ios-app-store-warning-payment-system",
+    "published_date": "2025-05-15T10:03:33+00:00",
+    "content_raw": "<figure>\n\n<img alt=\"A screenshot of a EU App Store warning message about alternative payments.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/Apple-App-Store-EU-warning-message.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>Apple is up to its old tricks again. | Image: The Verge</figcaption>\n</figure>\n<p class=\"has-text-align-none\">Apple is trying to dissuade Europeans from using iOS apps that support alternative payment options by making them look scary. <a href=\"https://daringfireball.net/linked/2025/05/14/app-store-eu-payment-warning\"><em>Daring Fireball</em>’s John Gruber spotted</a> that a red exclamation mark icon is being prominently displayed on the <a href=\"https://apps.apple.com/hu/app/instacar/id6443874337\">App Store listing for Instacar</a>, alongside a message warning users that it doesn’t use Apple’s “private and secure payment system.”</p>\n\n<p class=\"has-text-align-none\">Instacar, a three-year-old Hungarian app for checking the mileage and value of used cars, isn’t available on the US App Store. But in Hungary, in the EU, it’s listed as one of the top five apps in the Business category, with thousands of positive reviews — not a typical service that would warrant heightened caution. The only gripe that Apple seemingly has is that Instacar uses an external payment system, and that App Store payment features like purchase history, Family Sharing, and unified subscription management won’t be available on such purchases.</p>\n<img alt=\"A screenshot of Instacar on the Hungarian App Store, showing a warning message about external purchases.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/Instacar-App-Store.png?quality=90&#038;strip=all&#038;crop=0,26.51151115255,100,46.976977694901\" title=\"A screenshot of Instacar on the Hungarian App Store, showing a warning message about external purchases.\" />\n<p class=\"has-text-align-none\">“When you create an account on a developer’s external website, you may have to provide personal information, including payment information, directly to the developer or third-party partners,” <a href=\"https://apps.apple.com/hu/story/id1726640865\">Apple says in a support page</a> linked from its warning message. “You will be trusting the developer, as well as any partners and payment providers they work with, to handle your information based on their privacy and security controls.”</p>\n\n<p class=\"has-text-align-none\">Apple is already facing heat in the EU for its practices around scare tactics. In April, the <a href=\"https://www.theverge.com/news/636196/apple-eu-dma-probe-alternative-app-stores-tax\">European Commission issued preliminary findings</a> that Apple “makes it overly burdensome and confusing” for users to install alternative app marketplaces, a process that involves clicking through several scare sheets that ask users to confirm if they want to proceed. </p>\n\n<p class=\"has-text-align-none\">This App Store warning message has also appeared in the wake of the <a href=\"https://www.theverge.com/news/659246/apple-epic-app-store-judge-ruling-control\">recent <em>Epic vs Apple</em> ruling</a> that bans Apple from restricting how developers can link to alternative purchase systems. A notable requirement implemented to address Apple’s scare tactics was that the company cannot interfere with consumers choosing to leave an app with anything beyond “a neutral message” about being directed to a third-party site, though that injunction doesn’t apply outside of the US.</p>",
+    "content_text": "Apple is up to its old tricks again. | Image: The Verge Apple is trying to dissuade Europeans from using iOS apps that support alternative payment options by making them look scary. Daring Fireball ’s John Gruber spotted that a red exclamation mark icon is being prominently displayed on the App Store listing for Instacar , alongside a message warning users that it doesn’t use Apple’s “private and secure payment system.” Instacar, a three-year-old Hungarian app for checking the mileage and value of used cars, isn’t available on the US App Store. But in Hungary, in the EU, it’s listed as one of the top five apps in the Business category, with thousands of positive reviews — not a typical service that would warrant heightened caution. The only gripe that Apple seemingly has is that Instacar uses an external payment system, and that App Store payment features like purchase history, Family Sharing, and unified subscription management won’t be available on such purchases. “When you create an account on a developer’s external website, you may have to provide personal information, including payment information, directly to the developer or third-party partners,” Apple says in a support page linked from its warning message. “You will be trusting the developer, as well as any partners and payment providers they work with, to handle your information based on their privacy and security controls.” Apple is already facing heat in the EU for its practices around scare tactics. In April, the European Commission issued preliminary findings that Apple “makes it overly burdensome and confusing” for users to install alternative app marketplaces, a process that involves clicking through several scare sheets that ask users to confirm if they want to proceed. This App Store warning message has also appeared in the wake of the recent Epic vs Apple ruling that bans Apple from restricting how developers can link to alternative purchase systems. A notable requirement implemented to address Apple’s scare tactics was that the company cannot interfere with consumers choosing to leave an app with anything beyond “a neutral message” about being directed to a third-party site, though that injunction doesn’t apply outside of the US.",
+    "source_name": "The Verge",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://www.theverge.com/news/667379/leica-lux-iphone-camera-app-pro-photographer-filters-greg-williams",
+    "title": "Leica can now style your iPhone photos to mimic a pro photographer",
+    "link": "https://www.theverge.com/news/667379/leica-lux-iphone-camera-app-pro-photographer-filters-greg-williams",
+    "published_date": "2025-05-15T08:00:00+00:00",
+    "content_raw": "<figure>\n\n<img alt=\"Two side-by-side screenshots of the Leica Lux app shown on an iPhone.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/Leica-Lux-Greg-Williams-2up.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>The Greg Williams preset is the 16th photo filter to come to Leica’s Lux app. | Image: Leica Camera</figcaption>\n</figure>\n<p class=\"has-text-align-none\">Leica is bringing a new kind of filter effect called “Artist Looks” to its <a href=\"https://www.theverge.com/2024/6/6/24172452/leica-lux-iphone-app-announced-camera-lens-profiles\">Lux camera app</a> for iPhones, with the first one adjusting your photos to resemble&nbsp; the style and body of work of celebrity photographer <a href=\"https://gregwilliams.com/\">Greg Williams</a>.&nbsp;</p>\n\n<p class=\"has-text-align-none\">Artist Looks, like the other color and black-and-white looks in Leica’s app, are essentially one-click filter presets for easy photo editing. It’s the first time Leica Camera has collaborated with a pro on looks designed to mimic their personal aesthetic. In Williams’s case, his Artist Look is lightly inspired by Kodak Tri-X film, converting your color photos to black and white — with the white point shifted a touch to make the whites slightly off-white and yielding a more vintage warm-tone feel.</p>\n\n<p class=\"has-text-align-none\">The Leica Lux app update version 1.7 <a href=\"https://lux.leica-camera.com/XYDx/avpm44w3\">on the iOS App Store</a> will offer the Greg Williams look for Lux Pro account subscribers paying $6.99 per month or $69.99 annually, or included for anyone who buys <a href=\"https://www.theverge.com/news/607434/leica-lux-grip-apple-iphone-photography-camera\">Leica’s phone grip</a> that <a href=\"https://leicacamerausa.com/leica-lux-grip.html\">now costs $625</a> <a href=\"https://www.theverge.com/news/660197/leica-us-tariff-camera-price-increase-canada\">post-tariffs</a>.</p>\n\n<p class=\"has-text-align-none\">The Lux app is Leica’s dedicated camera app for iPhones, allowing free and paid users to take smartphone pictures with a bit of Leica’s color science. In addition to a selection of Leica-tuned photo filters like Classic, Chrome, and one based on the vintage Leica I Model A camera, the app also offers some signature looks taken from specific Leica lenses. The in-app “lenses” are essentially portrait mode processing recipes modeled after lenses like the 50mm f/1.2 Noctilux or a 35mm f/1.4 Summilux.</p>\n<img alt=\"\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/IMG_2731.jpeg?quality=90&#038;strip=all&#038;crop=0,15.095986038394,100,69.808027923211\" title=\"\" />\n<p class=\"has-text-align-none\">Leica is also releasing an update to its Fotos app that allows owners of the Leica Q3, Q3 43, SL3 and SL3-S to download the Greg Williams look directly into their cameras. And if you don’t have one of those newer models, the Fotos app can apply the filter to JPG files shot with any Leica with Wi-Fi that can upload images to the app. There’s no paywall for the Artist Look in the Fotos app, other than the barrier to entry of owning an actual Leica.</p>\n\n<p class=\"has-text-align-none\">Photo filters and film recipes are nothing new to mobile photography or users of Fujifilm cameras. While Fujifilm leans on its own film stocks for reference in its popular <a href=\"https://www.theverge.com/24118170/fujifilm-x100vi-ricoh-gr-iiix-point-shoot-camera-comparison\">X100</a> line, other camera-makers typically go the standard route (vivid, neutral, etc.) or get creative, like <a href=\"https://www.theverge.com/24161722/panasonic-lumix-s9-full-frame-camera\">Panasonic’s Lumix S9 camera</a> and its many custom profiles. This new way of leaning on a pro photog’s own style is certainly novel. It might be cool to see some iconic Leica photographers get their own Artist Look, if I’m ever strolling down the street and feeling a little Elliott Erwitt-y. Though, I imagine some pros may charge a pretty penny to cop their style.</p>",
+    "content_text": "The Greg Williams preset is the 16th photo filter to come to Leica’s Lux app. | Image: Leica Camera Leica is bringing a new kind of filter effect called “Artist Looks” to its Lux camera app for iPhones, with the first one adjusting your photos to resemble  the style and body of work of celebrity photographer Greg Williams . Artist Looks, like the other color and black-and-white looks in Leica’s app, are essentially one-click filter presets for easy photo editing. It’s the first time Leica Camera has collaborated with a pro on looks designed to mimic their personal aesthetic. In Williams’s case, his Artist Look is lightly inspired by Kodak Tri-X film, converting your color photos to black and white — with the white point shifted a touch to make the whites slightly off-white and yielding a more vintage warm-tone feel. The Leica Lux app update version 1.7 on the iOS App Store will offer the Greg Williams look for Lux Pro account subscribers paying $6.99 per month or $69.99 annually, or included for anyone who buys Leica’s phone grip that now costs $625 post-tariffs . The Lux app is Leica’s dedicated camera app for iPhones, allowing free and paid users to take smartphone pictures with a bit of Leica’s color science. In addition to a selection of Leica-tuned photo filters like Classic, Chrome, and one based on the vintage Leica I Model A camera, the app also offers some signature looks taken from specific Leica lenses. The in-app “lenses” are essentially portrait mode processing recipes modeled after lenses like the 50mm f/1.2 Noctilux or a 35mm f/1.4 Summilux. Leica is also releasing an update to its Fotos app that allows owners of the Leica Q3, Q3 43, SL3 and SL3-S to download the Greg Williams look directly into their cameras. And if you don’t have one of those newer models, the Fotos app can apply the filter to JPG files shot with any Leica with Wi-Fi that can upload images to the app. There’s no paywall for the Artist Look in the Fotos app, other than the barrier to entry of owning an actual Leica. Photo filters and film recipes are nothing new to mobile photography or users of Fujifilm cameras. While Fujifilm leans on its own film stocks for reference in its popular X100 line, other camera-makers typically go the standard route (vivid, neutral, etc.) or get creative, like Panasonic’s Lumix S9 camera and its many custom profiles. This new way of leaning on a pro photog’s own style is certainly novel. It might be cool to see some iconic Leica photographers get their own Artist Look, if I’m ever strolling down the street and feeling a little Elliott Erwitt-y. Though, I imagine some pros may charge a pretty penny to cop their style.",
+    "source_name": "The Verge",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://www.theverge.com/news/667309/we-are-rewind-cassette-boombox-retro-gb-001",
+    "title": "This modern cassette boombox will lure you in with glowing VU meters",
+    "link": "https://www.theverge.com/news/667309/we-are-rewind-cassette-boombox-retro-gb-001",
+    "published_date": "2025-05-15T07:00:00+00:00",
+    "content_raw": "<figure>\n\n<img alt=\"The We Are Rewind GB-001 cassette boombox against a gray background.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/wearerewind1.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100\" />\n\t<figcaption>The GB-001 is a modern take on the classic ‘80s boombox with features like Bluetooth and a rechargeable battery. | Image: We Are Rewind</figcaption>\n</figure>\n<p class=\"has-text-align-none\">We Are Rewind, a Paris-based company that has <a href=\"https://www.theverge.com/24295971/we-are-rewind-fiio-cassette-player-cd-dm-13\">relaunched the cassette player</a> with <a href=\"https://www.wearerewind.com/products/lecteur-cassette-bluetooth-orange-serge\">modern features</a> like support for wireless headphones and rechargeable batteries, has announced a larger boombox version. Streamlining the design of the portable stereos that were popular in the ‘80s, the €449 (around $500 USD) GB-001 can function as a Bluetooth speaker and stream audio from a mobile device. But its most appealing feature is its ability to play and record to cassettes, potentially reviving the mixtape for another generation.</p>\n\n<p class=\"has-text-align-none\">The GB-001’s cassette deck mechanism features a user-adjustable motor with internal speed regulation for accurate playback. It also has a “noise reduction circuit” that emulates Dolby B so it can properly play tapes recorded using that older noise reduction system without any loss in sound quality. It can record on tapes, too, from external sources that include a wired microphone or a pair of mics connected wirelessly over Bluetooth.</p>\n<img alt=\"A close-up of the We Are Rewind GB-001’s cassette mechanism.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/wearerewind2.jpg?quality=90&#038;strip=all&#038;crop=0,10.732984293194,100,78.534031413613\" title=\"A close-up of the We Are Rewind GB-001’s cassette mechanism.\" />\n<p class=\"has-text-align-none\">The GB-001 has four speakers — two “powerful woofers for extended bass response” paired with two “soft dome tweeters for refined voices and treble.” We Are Rewind describes the GB-001 as having a “natural sound signature” so, unlike the boomboxes of the ‘80s, it’s not going to drown out lyrics with overpowering bass. And in keeping with current trends in audio gear, the GB-001 includes a “spatialisation function for a wider, more immersive stereo image.”</p>\n\n<p class=\"has-text-align-none\">A rechargeable, user-replaceable 3,000mAh battery provides up to 10 hours of playback through the speakers when playing a tape, or up to 15 using an external audio source. That jumps up to 15 and 28 hours, respectively, when using headphones, but We Are Rewind didn’t specify if that’s through the 3.5-millimeter audio jack or Bluetooth.</p>\n<img alt=\"A close-up of the We Are Rewind GB-001’s functional glowing UV meters.\" src=\"https://platform.theverge.com/wp-content/uploads/sites/2/2025/05/wearerewind3.jpg?quality=90&#038;strip=all&#038;crop=0,7.4223648784937,100,85.155270243013\" title=\"A close-up of the We Are Rewind GB-001’s functional glowing UV meters.\" />\n<p class=\"has-text-align-none\">Even if you’re not in need of its cassette capabilities, the design of the GB–001 still makes it an appealing alternative to Bluetooth speakers that <a href=\"https://www.theverge.com/circuitbreaker/2017/3/27/15078522/disc-jock-e-bluetooth-waterproof-speaker\">often look like beach toys</a>. It not only has a retro-looking folding carrying handle, it also sports a pair of functional analog VU meters that are backlit with a soft warm glow. For those of us who grew up enamored with the design of stereos from the ‘70s and ‘80s, the VU meters alone could help justify the splurge.</p>",
+    "content_text": "The GB-001 is a modern take on the classic ‘80s boombox with features like Bluetooth and a rechargeable battery. | Image: We Are Rewind We Are Rewind, a Paris-based company that has relaunched the cassette player with modern features like support for wireless headphones and rechargeable batteries, has announced a larger boombox version. Streamlining the design of the portable stereos that were popular in the ‘80s, the €449 (around $500 USD) GB-001 can function as a Bluetooth speaker and stream audio from a mobile device. But its most appealing feature is its ability to play and record to cassettes, potentially reviving the mixtape for another generation. The GB-001’s cassette deck mechanism features a user-adjustable motor with internal speed regulation for accurate playback. It also has a “noise reduction circuit” that emulates Dolby B so it can properly play tapes recorded using that older noise reduction system without any loss in sound quality. It can record on tapes, too, from external sources that include a wired microphone or a pair of mics connected wirelessly over Bluetooth. The GB-001 has four speakers — two “powerful woofers for extended bass response” paired with two “soft dome tweeters for refined voices and treble.” We Are Rewind describes the GB-001 as having a “natural sound signature” so, unlike the boomboxes of the ‘80s, it’s not going to drown out lyrics with overpowering bass. And in keeping with current trends in audio gear, the GB-001 includes a “spatialisation function for a wider, more immersive stereo image.” A rechargeable, user-replaceable 3,000mAh battery provides up to 10 hours of playback through the speakers when playing a tape, or up to 15 using an external audio source. That jumps up to 15 and 28 hours, respectively, when using headphones, but We Are Rewind didn’t specify if that’s through the 3.5-millimeter audio jack or Bluetooth. Even if you’re not in need of its cassette capabilities, the design of the GB–001 still makes it an appealing alternative to Bluetooth speakers that often look like beach toys . It not only has a retro-looking folding carrying handle, it also sports a pair of functional analog VU meters that are backlit with a soft warm glow. For those of us who grew up enamored with the design of stereos from the ‘70s and ‘80s, the VU meters alone could help justify the splurge.",
+    "source_name": "The Verge",
+    "default_category": "Tecnología",
+    "source_keywords": [],
+    "source_blacklist": [
+      "sorteo",
+      "ofertas"
+    ],
+    "include_always": false,
+    "assigned_category": "Tecnología"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/iglesia/news/2025-05/arte-y-fe-en-los-lugares-agustinianos-de-la-ciudad-eterna.html",
+    "title": "Arte y fe en los lugares agustinianos de la Ciudad Eterna",
+    "link": "https://www.vaticannews.va/es/iglesia/news/2025-05/arte-y-fe-en-los-lugares-agustinianos-de-la-ciudad-eterna.html",
+    "published_date": "2025-05-15T09:47:00+00:00",
+    "content_raw": "<p>Un itinerario entre la fe, el arte y la caridad en la Roma de los Padres Agustinos. Son muchos los lugares significativos de la Ciudad Eterna vinculados a la Orden a la que pertenece el Papa León XIV: desde Santa Maria del Popolo hasta Sant'Agostino in Campo Marzio, desde la capilla de Santa Mónica donde fue ordenado sacerdote el joven Robert Francis Prevost, hasta Ostia Antica y las afueras romanas. Tras los pasos del obispo de Hipona y su madre Mónica</p>\n                    <p><a href=\"https://www.vaticannews.va/es/iglesia/news/2025-05/arte-y-fe-en-los-lugares-agustinianos-de-la-ciudad-eterna.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "Un itinerario entre la fe, el arte y la caridad en la Roma de los Padres Agustinos. Son muchos los lugares significativos de la Ciudad Eterna vinculados a la Orden a la que pertenece el Papa León XIV: desde Santa Maria del Popolo hasta Sant'Agostino in Campo Marzio, desde la capilla de Santa Mónica donde fue ordenado sacerdote el joven Robert Francis Prevost, hasta Ostia Antica y las afueras romanas. Tras los pasos del obispo de Hipona y su madre Mónica Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/el-papa-evangelizar-educando-y-educar-evangelizando.html",
+    "title": "El Papa: Evangelizar educando y educar evangelizando",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/el-papa-evangelizar-educando-y-educar-evangelizando.html",
+    "published_date": "2025-05-15T08:44:00+00:00",
+    "content_raw": "<p>En su audiencia a los Hermanos de las Escuelas Cristianas, León XIV recuerda la importancia de vivir la enseñanza como «ministerio y misión» para ayudar a los jóvenes a dar lo mejor de sí mismos según el plan de Dios, transformando los desafíos de la época contemporánea en «trampolines de lanzamiento». Es central el llamamiento a la «sinergia» entre todos los componentes educativos</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/el-papa-evangelizar-educando-y-educar-evangelizando.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "En su audiencia a los Hermanos de las Escuelas Cristianas, León XIV recuerda la importancia de vivir la enseñanza como «ministerio y misión» para ayudar a los jóvenes a dar lo mejor de sí mismos según el plan de Dios, transformando los desafíos de la época contemporánea en «trampolines de lanzamiento». Es central el llamamiento a la «sinergia» entre todos los componentes educativos Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/entrevista-robert-prevost-leon-xiv-prior-anthony-pizzo-agustin.html",
+    "title": "Robert Prevost: Un Papa con alma agustiniana y compromiso social",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/entrevista-robert-prevost-leon-xiv-prior-anthony-pizzo-agustin.html",
+    "published_date": "2025-05-15T08:25:00+00:00",
+    "content_raw": "<p>En una emotiva entrevista, el Padre Anthony Pizzo, Prior de los agustinos en Chicago, comparte su testimonio personal sobre el nuevo Papa León XIV, antes Robert Prevost. Lo describe como un hombre íntegro, equilibrado y profundamente comprometido con la misión de la Iglesia y la espiritualidad agustiniana. Su elección del nombre papal rinde homenaje al legado social de León XIII, en un momento en que el mundo clama por unidad, justicia y sanación.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/entrevista-robert-prevost-leon-xiv-prior-anthony-pizzo-agustin.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "En una emotiva entrevista, el Padre Anthony Pizzo, Prior de los agustinos en Chicago, comparte su testimonio personal sobre el nuevo Papa León XIV, antes Robert Prevost. Lo describe como un hombre íntegro, equilibrado y profundamente comprometido con la misión de la Iglesia y la espiritualidad agustiniana. Su elección del nombre papal rinde homenaje al legado social de León XIII, en un momento en que el mundo clama por unidad, justicia y sanación. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-la-divina-liturgia-en-rito-b.html",
+    "title": "Jubileo de las Iglesias Orientales, la Divina Liturgia en Rito Bizantino",
+    "link": "https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-la-divina-liturgia-en-rito-b.html",
+    "published_date": "2025-05-15T05:40:00+00:00",
+    "content_raw": "<p>El Patriarca de la Iglesia greco-católica melquita, José Absi, presidió la Divina Liturgia en la Basílica de San Pedro según la tradición constantinopolitana. Cardenal Gugerotti: la Iglesia es una porque es variada, no porque es uniforme.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-la-divina-liturgia-en-rito-b.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "El Patriarca de la Iglesia greco-católica melquita, José Absi, presidió la Divina Liturgia en la Basílica de San Pedro según la tradición constantinopolitana. Cardenal Gugerotti: la Iglesia es una porque es variada, no porque es uniforme. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-las-visperas-en-santa-maria.html",
+    "title": "Jubileo de las Iglesias Orientales, las Vísperas en Santa María",
+    "link": "https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-las-visperas-en-santa-maria.html",
+    "published_date": "2025-05-14T17:16:00+00:00",
+    "content_raw": "<p>Más de 500 fieles participaron en la liturgia en rito siro-antioqueno, en presencia de los responsables religiosos de las Iglesias siro-católica, maronita y siro-malankariana.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-iglesias-orientales-las-visperas-en-santa-maria.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "Más de 500 fieles participaron en la liturgia en rito siro-antioqueno, en presencia de los responsables religiosos de las Iglesias siro-católica, maronita y siro-malankariana. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/iglesia/news/2025-05/hiiboro-kussala-que-leon-xiv-nos-ayude-a-lograr-la-paz.html",
+    "title": "Hiiboro Kussala: «Que León XIV nos ayude a lograr la paz»",
+    "link": "https://www.vaticannews.va/es/iglesia/news/2025-05/hiiboro-kussala-que-leon-xiv-nos-ayude-a-lograr-la-paz.html",
+    "published_date": "2025-05-14T14:23:00+00:00",
+    "content_raw": "<p>Desde un Sudán del Sur ensangrentado por la guerra, el pastor de la diócesis de Tombura-Yambi lanza un llamamiento al Pontífice para que inste a todos los líderes políticos a «sentarse de nuevo a la mesa de negociaciones para poner fin a la violencia». En una parroquia de la diócesis, un agente pastoral fue asesinado por la guerrilla el sábado pasado</p>\n                    <p><a href=\"https://www.vaticannews.va/es/iglesia/news/2025-05/hiiboro-kussala-que-leon-xiv-nos-ayude-a-lograr-la-paz.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "Desde un Sudán del Sur ensangrentado por la guerra, el pastor de la diócesis de Tombura-Yambi lanza un llamamiento al Pontífice para que inste a todos los líderes políticos a «sentarse de nuevo a la mesa de negociaciones para poner fin a la violencia». En una parroquia de la diócesis, un agente pastoral fue asesinado por la guerrilla el sábado pasado Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/dos-sacerdotes-amigos-recuerdan-los-anos-de-prevost-en-peru.html",
+    "title": "Dos sacerdotes amigos recuerdan los años de Prevost en Perú",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/dos-sacerdotes-amigos-recuerdan-los-anos-de-prevost-en-peru.html",
+    "published_date": "2025-05-14T14:05:00+00:00",
+    "content_raw": "<p>Testimonios recogidos de personas que conocieron al entonces padre Prevost: un pastor capaz de hablar a la gente, atento a los retos sociales y profundamente animado por la pasión de anunciar el Evangelio</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/dos-sacerdotes-amigos-recuerdan-los-anos-de-prevost-en-peru.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "Testimonios recogidos de personas que conocieron al entonces padre Prevost: un pastor capaz de hablar a la gente, atento a los retos sociales y profundamente animado por la pasión de anunciar el Evangelio Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/vaticano/news/2025-05/emilce-cuda-papa-leon-xiv-comision-pontificia-america-latina.html",
+    "title": "Emilce Cuda: León XIV, un Papa para la paz y la misericordia",
+    "link": "https://www.vaticannews.va/es/vaticano/news/2025-05/emilce-cuda-papa-leon-xiv-comision-pontificia-america-latina.html",
+    "published_date": "2025-05-14T12:25:00+00:00",
+    "content_raw": "<p>La secretaria de la Pontificia Comisión para América Latina, que presidía el entonces Cardenal Prevost durante el pontificado de Francisco, reflexiona sobre el impacto de la elección del nuevo Pontífice en América Latina, destacando los temas principales de los primeros días de León XIV.\n\n\n\n\n\n</p>\n                    <p><a href=\"https://www.vaticannews.va/es/vaticano/news/2025-05/emilce-cuda-papa-leon-xiv-comision-pontificia-america-latina.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "La secretaria de la Pontificia Comisión para América Latina, que presidía el entonces Cardenal Prevost durante el pontificado de Francisco, reflexiona sobre el impacto de la elección del nuevo Pontífice en América Latina, destacando los temas principales de los primeros días de León XIV. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/quiere-jugar-un-poquito-el-campeon-de-tenis-sinner.html",
+    "title": "¿Quiere jugar un poquito?: Encuentro del campeón de tenis Sinner  con León XIV",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/quiere-jugar-un-poquito-el-campeon-de-tenis-sinner.html",
+    "published_date": "2025-05-14T12:16:00+00:00",
+    "content_raw": "<p>El Papa, gran aficionado al tenis, recibió, esta mañana, en el Vaticano, al campeón del Tirol del Sur, que compite en el Internacional de Roma, junto a sus padres y al presidente de la FITP, Angelo Binaghi, que honró al Pontífice con el carnet de socio honorario. Intercambio de bromas y regalos, entre ellos, un ejemplar de la raqueta de Sinner, con el Papa León interesado en las competiciones de estos días.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/quiere-jugar-un-poquito-el-campeon-de-tenis-sinner.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "El Papa, gran aficionado al tenis, recibió, esta mañana, en el Vaticano, al campeón del Tirol del Sur, que compite en el Internacional de Roma, junto a sus padres y al presidente de la FITP, Angelo Binaghi, que honró al Pontífice con el carnet de socio honorario. Intercambio de bromas y regalos, entre ellos, un ejemplar de la raqueta de Sinner, con el Papa León interesado en las competiciones de estos días. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/vaticano/news/2025-05/fray-antonio-carron-la-proteccion-de-menores-parte-de-la-conver.html",
+    "title": "Diplomado en Safeguarding. Antonio Carrón: Es necesario la conversión personal",
+    "link": "https://www.vaticannews.va/es/vaticano/news/2025-05/fray-antonio-carron-la-proteccion-de-menores-parte-de-la-conver.html",
+    "published_date": "2025-05-14T12:00:00+00:00",
+    "content_raw": "<p>El Instituto de Antropología – Estudios Interdisciplinares sobre la Dignidad Humana y el Cuidado de las Personas Vulnerables (IADC), de la Pontificia Universidad Gregoriana de Roma viene organizando el “Diplomado en Safeguarding: Teoría y Práctica” en su edición 2025-2026. Fray Antonio Carrón: “El objetivo es formar agentes de transformación capaces de promover entornos seguros tanto dentro como fuera de la Iglesia”. </p>\n                    <p><a href=\"https://www.vaticannews.va/es/vaticano/news/2025-05/fray-antonio-carron-la-proteccion-de-menores-parte-de-la-conver.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "El Instituto de Antropología – Estudios Interdisciplinares sobre la Dignidad Humana y el Cuidado de las Personas Vulnerables (IADC), de la Pontificia Universidad Gregoriana de Roma viene organizando el “Diplomado en Safeguarding: Teoría y Práctica” en su edición 2025-2026. Fray Antonio Carrón: “El objetivo es formar agentes de transformación capaces de promover entornos seguros tanto dentro como fuera de la Iglesia”. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/el-ignificado-del-escudo-de-armas-de-leon-xiv.html",
+    "title": "El significado del escudo pontificio de León XIV",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/el-ignificado-del-escudo-de-armas-de-leon-xiv.html",
+    "published_date": "2025-05-14T11:50:00+00:00",
+    "content_raw": "<p>La explicación oficial del escudo y lema del Pontífice ha sido publicada por la Oficina de Prensa de la Santa Sede, en la que, en particular, emerge un corazón ardiente atravesado por una flecha y sostenido por un libro, emblema de la Orden Agustiniana, que representa simbólicamente las palabras de San Agustín recogidas en el noveno libro de las Confesiones: «Has herido mi corazón con tu amor».\n</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/el-ignificado-del-escudo-de-armas-de-leon-xiv.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "La explicación oficial del escudo y lema del Pontífice ha sido publicada por la Oficina de Prensa de la Santa Sede, en la que, en particular, emerge un corazón ardiente atravesado por una flecha y sostenido por un libro, emblema de la Orden Agustiniana, que representa simbólicamente las palabras de San Agustín recogidas en el noveno libro de las Confesiones: «Has herido mi corazón con tu amor». Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/peru-el-presidente-de-caritas-recuerda-a-prevost.html",
+    "title": "Perú: El presidente de Cáritas recuerda a Prevost \"entre la gente\"",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/peru-el-presidente-de-caritas-recuerda-a-prevost.html",
+    "published_date": "2025-05-14T11:42:00+00:00",
+    "content_raw": "<p>El obispo auxiliar de Lima, Guillermo Antonio Cornejo Monzón, repasa en una entrevista con los medios vaticanos la labor del pontífice cuando era prelado en Perú: \"Escuchaba a todos con respeto y luego daba su opinión\".</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/peru-el-presidente-de-caritas-recuerda-a-prevost.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "El obispo auxiliar de Lima, Guillermo Antonio Cornejo Monzón, repasa en una entrevista con los medios vaticanos la labor del pontífice cuando era prelado en Perú: \"Escuchaba a todos con respeto y luego daba su opinión\". Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/iglesia/news/2025-05/superioras-generales-eligen-a-una-nueva-presidente.html",
+    "title": "Superioras Generales eligen a una nueva presidente",
+    "link": "https://www.vaticannews.va/es/iglesia/news/2025-05/superioras-generales-eligen-a-una-nueva-presidente.html",
+    "published_date": "2025-05-14T11:28:00+00:00",
+    "content_raw": "<p>La hermana Oonah O'Shea es la nueva presidenta de la UISG. Nacida en Australia de padres irlandeses, vivió durante 20 años en Filipinas, donde fundó una misión de la Congregación de las Religiosas de Notre Dame de Sion.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/iglesia/news/2025-05/superioras-generales-eligen-a-una-nueva-presidente.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "La hermana Oonah O'Shea es la nueva presidenta de la UISG. Nacida en Australia de padres irlandeses, vivió durante 20 años en Filipinas, donde fundó una misión de la Congregación de las Religiosas de Notre Dame de Sion. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.vaticannews.va/es/papa/news/2025-05/consejero-agustino-africa-leon-xiv-don-para-todo-el-continente.html",
+    "title": "El consejero agustino para África: León XIV es un don para todo el continente",
+    "link": "https://www.vaticannews.va/es/papa/news/2025-05/consejero-agustino-africa-leon-xiv-don-para-todo-el-continente.html",
+    "published_date": "2025-05-14T11:13:00+00:00",
+    "content_raw": "<p>El padre Edward Danaing Daleng habla a los medios vaticanos sobre la relación del Pontífice con la tierra africana: \" Tiene a África en su corazón. Ha visitado varias veces nuestras misiones en diferentes países\". La última vez fue en Kenia a finales de 2024, donde la Federación Agustiniana de África tiene varios centros para enfermos de sida.</p>\n                    <p><a href=\"https://www.vaticannews.va/es/papa/news/2025-05/consejero-agustino-africa-leon-xiv-don-para-todo-el-continente.html\">Leer todo</a></p>\n                    <p>&nbsp;</p>",
+    "content_text": "El padre Edward Danaing Daleng habla a los medios vaticanos sobre la relación del Pontífice con la tierra africana: \" Tiene a África en su corazón. Ha visitado varias veces nuestras misiones en diferentes países\". La última vez fue en Kenia a finales de 2024, donde la Federación Agustiniana de África tiene varios centros para enfermos de sida. Leer todo",
+    "source_name": "Vatican News",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.religiondigital.org/a_dios_rogando-_angel_aznarez/conclave-catolico-Papa-fraile-agustinos-Leon-Agustinos-Escorial_7_2779592018.html",
+    "title": "El cónclave católico, el Papa fraile y los agustinos en su jardín",
+    "link": "https://www.religiondigital.org/a_dios_rogando-_angel_aznarez/conclave-catolico-Papa-fraile-agustinos-Leon-Agustinos-Escorial_7_2779592018.html",
+    "published_date": "2025-05-15T10:52:32+00:00",
+    "content_raw": "<p><img height=\"472\" src=\"http://www.religiondigital.org/2025/05/15/a_dios_rogando-_angel_aznarez/jardin-frailes-Azana_2779532027_17731080_626x472.png\" width=\"626\" /></p><p>«En sus consistorios ha creado cardenales de los cinco continentes, ¿cómo le gustaría que fuese el cónclave que elija a su sucesor?». Y el Papa Francisco respondió: “Que sea católico. Un cónclave católico que elija a mi sucesor”</p>\n<p>\"Ya tuvimos papas regulares y seculares, un papa jesuita, varios franciscanos, ahora un agustino; y antes otro de la Orden de la Camáldula\"</p>\n<p>\"Recomiendo leer El Jardín de los frailes, para saber cosas de los agustinos, de su patriotismo e imperialismo, y de la Historia de España, tan opuestos a lo que luego sería el azañismo sobre el ser de España\"</p>",
+    "content_text": "«En sus consistorios ha creado cardenales de los cinco continentes, ¿cómo le gustaría que fuese el cónclave que elija a su sucesor?». Y el Papa Francisco respondió: “Que sea católico. Un cónclave católico que elija a mi sucesor” \"Ya tuvimos papas regulares y seculares, un papa jesuita, varios franciscanos, ahora un agustino; y antes otro de la Orden de la Camáldula\" \"Recomiendo leer El Jardín de los frailes, para saber cosas de los agustinos, de su patriotismo e imperialismo, y de la Historia de España, tan opuestos a lo que luego sería el azañismo sobre el ser de España\"",
+    "source_name": "Religión digital",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.religiondigital.org/vaticano/XIV-Hermanos-Escuelas-Cristianas-Evangelizar-educar_0_2779522026.html",
+    "title": "León XIV a los Hermanos de las Escuelas Cristianas: \"Evangelizar educando y educar evangelizando\"",
+    "link": "https://www.religiondigital.org/vaticano/XIV-Hermanos-Escuelas-Cristianas-Evangelizar-educar_0_2779522026.html",
+    "published_date": "2025-05-15T10:03:06+00:00",
+    "content_raw": "<p><img height=\"472\" src=\"http://www.religiondigital.org/2025/05/15/vaticano/Audiencia-XIV-Escuelas-Cristianas-Salle_2779532033_17731309_626x472.jpg\" width=\"626\" /></p><p>León XIV recuerda la importancia de vivir la enseñanza como \"ministerio y misión\" para ayudar a los jóvenes a dar lo mejor de sí mismos según el plan de Dios, transformando los desafíos de la época contemporánea en \"trampolines de lanzamiento\"</p>\n<p>Es central el llamamiento a la \"sinergia\" entre todos los componentes educativos</p>",
+    "content_text": "León XIV recuerda la importancia de vivir la enseñanza como \"ministerio y misión\" para ayudar a los jóvenes a dar lo mejor de sí mismos según el plan de Dios, transformando los desafíos de la época contemporánea en \"trampolines de lanzamiento\" Es central el llamamiento a la \"sinergia\" entre todos los componentes educativos",
+    "source_name": "Religión digital",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.religiondigital.org/libros/humanismo-cristiano-contexto-antropologia-social-libro-angel-gutierrez_0_2779222060.html",
+    "title": "Ángel Gutiérrez: \"Entre la visión cristiana del hombre y la visión secularizada del mismo sigue habiendo fuertes tensiones\"",
+    "link": "https://www.religiondigital.org/libros/humanismo-cristiano-contexto-antropologia-social-libro-angel-gutierrez_0_2779222060.html",
+    "published_date": "2025-05-15T09:08:59+00:00",
+    "content_raw": "<p><img height=\"472\" src=\"http://www.religiondigital.org/2025/05/14/libros/Angel-Gutierrez-Sanz_2779232064_17729633_626x472.jpg\" width=\"626\" /></p><p>\"Los humanismos seculares se distinguen entre sí, según el grado de centralidad concedido al hombre, quien puede llegar a ser considerado como la medida de todas las cosas, dando lugar a ese tipo de humanismos que conocemos como antropocéntricos\"</p>\n<p>\"Entre la visión cristiana del hombre y la visión secularizada del mismo sigue habiendo fuertes tensiones, como en tiempos no muy lejanos también las hubo en el interior del cristianismo, con motivo de la interacción funcional entre cuerpo y alma como si se tratara de dos enemigos irreconciliables\"</p>",
+    "content_text": "\"Los humanismos seculares se distinguen entre sí, según el grado de centralidad concedido al hombre, quien puede llegar a ser considerado como la medida de todas las cosas, dando lugar a ese tipo de humanismos que conocemos como antropocéntricos\" \"Entre la visión cristiana del hombre y la visión secularizada del mismo sigue habiendo fuertes tensiones, como en tiempos no muy lejanos también las hubo en el interior del cristianismo, con motivo de la interacción funcional entre cuerpo y alma como si se tratara de dos enemigos irreconciliables\"",
+    "source_name": "Religión digital",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.religiondigital.org/opinion/Leon-XIV-ustedes-obispo-cristiano-Academia-Lideres_0_2779522021.html",
+    "title": "León XIV: “Para ustedes soy obispo,  entre ustedes soy cristiano”",
+    "link": "https://www.religiondigital.org/opinion/Leon-XIV-ustedes-obispo-cristiano-Academia-Lideres_0_2779522021.html",
+    "published_date": "2025-05-15T07:35:55+00:00",
+    "content_raw": "<p><img height=\"472\" src=\"http://www.religiondigital.org/2025/05/15/opinion/Leon-XIV-San-Agustin_2779532023_17730926_626x472.png\" width=\"626\" /></p><p>De sus padres Louis Marius Prevost y Mildred Martínez heredó un mestizaje racial y cultural italiano, francés, africano y español</p>\n<p>Doble ciudadanía que lo convierte, también, en el primer papa peruano y el segundo latinoamericano</p>\n<p>Con este bagaje de talentos y experiencias, el nuevo Papa está capacitado para afrontar los grandes desafíos que el mundo de hoy le plantea al ser y quehacer de la Iglesia</p>\n<p>Un Papa al que la humanidad entera le cabe en la cabeza y en el corazón, como pastor de la paz, capaz de conciliar y reconciliar los nortes con los sures de la tierra</p>",
+    "content_text": "De sus padres Louis Marius Prevost y Mildred Martínez heredó un mestizaje racial y cultural italiano, francés, africano y español Doble ciudadanía que lo convierte, también, en el primer papa peruano y el segundo latinoamericano Con este bagaje de talentos y experiencias, el nuevo Papa está capacitado para afrontar los grandes desafíos que el mundo de hoy le plantea al ser y quehacer de la Iglesia Un Papa al que la humanidad entera le cabe en la cabeza y en el corazón, como pastor de la paz, capaz de conciliar y reconciliar los nortes con los sures de la tierra",
+    "source_name": "Religión digital",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
+  },
+  {
+    "id": "https://www.religiondigital.org/vaticano/Leon-XIV-Francisco_0_2778622118.html",
+    "title": "León XIV, ¿será un “Francisco 2.0”?",
+    "link": "https://www.religiondigital.org/vaticano/Leon-XIV-Francisco_0_2778622118.html",
+    "published_date": "2025-05-15T07:35:41+00:00",
+    "content_raw": "<p><img height=\"472\" src=\"http://www.religiondigital.org/2025/05/12/vaticano/Leon-XIV-primer-Regina-Coeli_2778632119_17725104_626x472.jpg\" width=\"626\" /></p><p>León XIV, ¿va a ser una versión mejorada de Francisco? ¿Va a propiciar la relación con el Dios de la Vida, cuidando su presencia, aguijoneante -en los calvarios contemporáneos y en los crucificados de nuestros días- y, a la vez, estimulante, gracias al testimonio de tantos samaritanos, personas e instituciones que están con ellos y a su lado? O, por el contrario, ¿va a dejar que el legado del papa Bergoglio se disuelva poco a poco?</p>",
+    "content_text": "León XIV, ¿va a ser una versión mejorada de Francisco? ¿Va a propiciar la relación con el Dios de la Vida, cuidando su presencia, aguijoneante -en los calvarios contemporáneos y en los crucificados de nuestros días- y, a la vez, estimulante, gracias al testimonio de tantos samaritanos, personas e instituciones que están con ellos y a su lado? O, por el contrario, ¿va a dejar que el legado del papa Bergoglio se disuelva poco a poco?",
+    "source_name": "Religión digital",
+    "default_category": "Religión",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Religión"
   },
   {
     "id": "https://www.bbc.com/news/articles/cj930k9ew74o",
@@ -461,46 +871,8 @@
       "video",
       "podcast"
     ],
+    "include_always": false,
     "assigned_category": "Curiosidades"
-  },
-  {
-    "id": "https://elpais.com/deportes/futbol/2025-05-14/la-remontada-de-vallejo-y-jacobo-para-el-madrid-alarga-la-liga.html",
-    "title": "La remontada de Vallejo y Jacobo para el Madrid alarga la Liga",
-    "link": "https://elpais.com/deportes/futbol/2025-05-14/la-remontada-de-vallejo-y-jacobo-para-el-madrid-alarga-la-liga.html",
-    "published_date": "2025-05-14T22:01:25+00:00",
-    "content_raw": "Jacobo Ramón marca el gol de la victoria del Real Madrid ante el Mallorca en el Bernabéu.",
-    "content_text": "Jacobo Ramón marca el gol de la victoria del Real Madrid ante el Mallorca en el Bernabéu.",
-    "source_name": "El País Deportes",
-    "default_category": "Deportes",
-    "source_keywords": [],
-    "source_blacklist": [],
-    "assigned_category": "Deportes"
-  },
-  {
-    "id": "https://elpais.com/deportes/futbol/2025-05-15/no-eres-tu-ancelotti-soy-yo.html",
-    "title": "No eres tú, Ancelotti: soy yo",
-    "link": "https://elpais.com/deportes/futbol/2025-05-15/no-eres-tu-ancelotti-soy-yo.html",
-    "published_date": "2025-05-15T03:15:00+00:00",
-    "content_raw": "Carlo Ancelotti durante la rueda de prensa este martes.",
-    "content_text": "Carlo Ancelotti durante la rueda de prensa este martes.",
-    "source_name": "El País Deportes",
-    "default_category": "Deportes",
-    "source_keywords": [],
-    "source_blacklist": [],
-    "assigned_category": "Deportes"
-  },
-  {
-    "id": "https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html",
-    "title": "39 tiros del Real Madrid y 26 córner: “Si hubiéramos hecho esto siempre, se podía hacer una temporada mejor”",
-    "link": "https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html",
-    "published_date": "2025-05-14T22:30:49+00:00",
-    "content_raw": "Jacobo Ramón celebra junto a Jesús Vallejo su gol ante el mallorca este miércoles.",
-    "content_text": "Jacobo Ramón celebra junto a Jesús Vallejo su gol ante el mallorca este miércoles.",
-    "source_name": "El País Deportes",
-    "default_category": "Deportes",
-    "source_keywords": [],
-    "source_blacklist": [],
-    "assigned_category": "Deportes"
   },
   {
     "id": "https://elpais.com/deportes/futbol/2025-05-14/ferran-torres-es-operado-de-urgencia-de-apendicitis.html",
@@ -513,6 +885,21 @@
     "default_category": "Deportes",
     "source_keywords": [],
     "source_blacklist": [],
+    "include_always": false,
+    "assigned_category": "Deportes"
+  },
+  {
+    "id": "https://elpais.com/deportes/futbol/2025-05-14/el-unico-error-de-mamardashvili-aleja-del-abismo-al-alaves-y-hunde-a-las-palmas.html",
+    "title": "El único error de Mamardashvili aleja del abismo al Alavés y hunde a Las Palmas",
+    "link": "https://elpais.com/deportes/futbol/2025-05-14/el-unico-error-de-mamardashvili-aleja-del-abismo-al-alaves-y-hunde-a-las-palmas.html",
+    "published_date": "2025-05-14T19:23:06+00:00",
+    "content_raw": "Joan Jordán anota de penalti este miércoles ante el Valencia.",
+    "content_text": "Joan Jordán anota de penalti este miércoles ante el Valencia.",
+    "source_name": "El País Deportes",
+    "default_category": "Deportes",
+    "source_keywords": [],
+    "source_blacklist": [],
+    "include_always": false,
     "assigned_category": "Deportes"
   },
   {
@@ -526,6 +913,7 @@
     "default_category": "Deportes",
     "source_keywords": [],
     "source_blacklist": [],
+    "include_always": false,
     "assigned_category": "Deportes"
   },
   {
@@ -539,6 +927,7 @@
     "default_category": "Deportes",
     "source_keywords": [],
     "source_blacklist": [],
+    "include_always": false,
     "assigned_category": "Deportes"
   }
 ]

@@ -3,51 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FeedDigest - 2025-05-15</title>
+    <title>FeedDigest - 2025-05-16</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <!-- Optional: Google Font for headings (e.g., Merriweather or Lora) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-        .container { max-width: 900px; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        header { background-color: #333; color: #fff; padding: 1em 0; text-align: center; }
-        header h1 { margin: 0; }
-        nav ul { list-style-type: none; padding: 0; text-align: center; background-color: #444; margin-bottom: 20px; }
-        nav ul li { display: inline; margin-right: 10px; }
-        nav ul li a { color: #fff; text-decoration: none; padding: 10px 15px; display: inline-block; }
-        nav ul li a:hover { background-color: #555; }
-        .content { padding: 10px; }
-        .category-section { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
-        .category-section h2 { color: #555; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
-        .synthesized-item { margin-bottom: 15px; }
-        .synthesized-item p { line-height: 1.6; }
-        .references { margin-top: 10px; font-size: 0.9em; }
-        .references ul { list-style-type: none; padding-left: 0; }
-        .references li { margin-bottom: 5px; }
-        .feedback-buttons button { padding: 5px 10px; margin-right: 5px; cursor: pointer; }
-        footer { text-align: center; padding: 20px; margin-top: 30px; background-color: #333; color: #fff; font-size: 0.9em; }
+        :root {
+            /* --- Flexoki Palette Definitions --- */
+            /* Base Light */
+            --flexoki-paper: #FFFCF0;      /* bg (Light) */
+            --flexoki-base-50: #F2F0E5;    /* bg-2 (Light) */
+            --flexoki-base-100: #E6E4D9;   /* ui (Light) */
+            --flexoki-base-150: #DAD8CE;   /* ui-2 (Light) */
+            --flexoki-base-200: #CECDC3;   /* ui-3 (Light), tx (Dark) */
+            --flexoki-base-300: #B7B5AC;   /* tx-3 (Light) */
+            --flexoki-base-600: #6F6E69;   /* tx-2 (Light) */
+            --flexoki-black: #100F0F;      /* tx (Light), bg (Dark) */
+
+            /* Base Dark (for specific elements like header/nav) */
+            --flexoki-base-950: #1C1B1A;   /* bg-2 (Dark) */
+            --flexoki-base-900: #282726;   /* ui (Dark) */
+            --flexoki-base-850: #343331;   /* ui-2 (Dark) - Good for dark code block BG */
+            --flexoki-base-800: #403E3C;   /* ui-3 (Dark) */
+
+
+            /* Accents (Light Theme - 600 series) */
+            --flexoki-red-600: #AF3029;
+            --flexoki-orange-600: #BC5215;
+            --flexoki-yellow-600: #AD8301;
+            --flexoki-green-600: #66800B;
+            --flexoki-cyan-600: #24837B;
+            --flexoki-blue-600: #205EA6;
+            --flexoki-purple-600: #5E409D;
+            --flexoki-magenta-600: #A02F6F;
+
+            /* Accent Darker Shades for Hover (from Extended Palette 700 series) */
+            --flexoki-cyan-700: #1C6C66;
+            --flexoki-blue-700: #1A4F8C;
+
+
+            /* --- Semantic Site Variables Mapped to Flexoki --- */
+            --page-bg: var(--flexoki-base-50);      /* Page canvas */
+            --content-bg: var(--flexoki-paper);     /* Content card background */
+            --text-color: var(--flexoki-black);     /* Main text - like ink */
+            --heading-color: var(--flexoki-black);  /* Headings also in "ink" */
+
+            --accent-color: var(--flexoki-blue-600);        /* Primary UI accent (e.g., buttons, top border) */
+            --accent-hover-color: var(--flexoki-blue-700);  /* Hover for primary accent */
+            --link-color: var(--flexoki-cyan-600);          /* Specific for inline text links */
+            --link-hover-color: var(--flexoki-cyan-700);
+
+            --muted-text-color: var(--flexoki-base-600);   /* tx-2 */
+            --faint-text-color: var(--flexoki-base-300);   /* tx-3 */
+
+            --border-color: var(--flexoki-base-100);       /* ui - standard borders */
+            --hover-border-color: var(--flexoki-base-150); /* ui-2 */
+            --active-border-color: var(--flexoki-base-200);/* ui-3 */
+
+            /* Header & Navigation (Using Flexoki Dark Theme values for these specific elements) */
+            --header-bg: var(--flexoki-black);
+            --header-text-color: var(--flexoki-base-200);
+            --nav-bg: var(--flexoki-base-950);
+            --nav-text-color: var(--flexoki-base-200);
+            --nav-hover-bg: var(--flexoki-base-900);
+
+            /* Typography (Keep your selected fonts) */
+            --font-family-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-serif: 'Merriweather', Georgia, Cambria, "Times New Roman", Times, serif;
+            --line-height: 1.7;
+
+            /* --- Pico.css Variable Overrides with Flexoki --- */
+            --pico-font-family: var(--font-family-sans);
+            --pico-line-height: var(--line-height);
+            --pico-primary: var(--accent-color);            /* e.g., Pico buttons */
+            --pico-primary-hover: var(--accent-hover-color);
+            --pico-primary-focus: var(--accent-color);      /* Adjust outline if needed */
+            --pico-primary-inverse: var(--flexoki-paper);   /* Text on primary buttons */
+
+            --pico-background-color: var(--page-bg);
+            --pico-color: var(--text-color);                /* Default text color for Pico components */
+
+            --pico-h1-color: var(--heading-color);
+            --pico-h2-color: var(--heading-color);
+            --pico-h3-color: var(--heading-color);
+            /* ... continue for h4, h5, h6 if used */
+
+            --pico-card-background-color: var(--content-bg);
+            --pico-card-border-color: var(--border-color);
+
+            --pico-muted-color: var(--muted-text-color);
+            --pico-muted-border-color: var(--border-color);
+
+            --pico-form-element-border-color: var(--border-color);
+            --pico-form-element-active-border-color: var(--active-border-color); /* Use active border for focused form elements */
+            --pico-form-element-focus-color: var(--accent-color); /* For Pico's default box-shadow focus; border will be handled by active-border-color */
+            --pico-form-element-placeholder-color: var(--muted-text-color);
+
+            --pico-table-border-color: var(--border-color);
+            --pico-table-header-background-color: var(--flexoki-base-50); /* bg-2 for table headers */
+            --pico-table-header-color: var(--text-color);
+        }
+
+        body {
+            font-family: var(--font-family-sans);
+            background-color: var(--page-bg);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased; /* crisper text on WebKit */
+            -moz-osx-font-smoothing: grayscale; /* crisper text on Firefox */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-serif);
+            color: var(--heading-color);
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--text-color);
+        }
+
+        /* Main content container */
+        main.container {
+            max-width: 850px;
+            margin: 2rem auto;
+            background-color: var(--content-bg);
+            padding: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.07); /* Softer shadow */
+            border-radius: 4px; /* Subtler radius */
+            border-top: 4px solid var(--accent-color); /* Flexoki blue accent */
+        }
+
+        /* Header - "Masthead" Style */
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text-color);
+            padding: 2.5em 1em;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        header h1 {
+            margin: 0; font-size: 3em; font-family: var(--font-family-serif);
+            color: var(--header-text-color); font-weight: 700; letter-spacing: -1px;
+        }
+        header p {
+            margin-top: 0.5em; font-size: 1.15em; color: var(--nav-text-color); /* nav-text for slightly muted subtitle */
+            font-family: var(--font-family-sans);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--nav-bg);
+            padding: 0.75rem 1rem; margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        nav ul { list-style-type: none; padding: 0; margin: 0; text-align: center; }
+        nav ul li { display: inline-block; margin: 0 0.5rem; }
+        nav ul li a {
+            color: var(--nav-text-color); text-decoration: none; padding: 0.75rem 1rem;
+            display: inline-block; border-radius: 3px;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            font-family: var(--font-family-sans); font-weight: 600;
+            text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.5px;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: var(--nav-hover-bg); color: var(--flexoki-paper); /* Ensure light text on hover */
+            outline: none;
+        }
+        nav ul li a.active { /* Example for active link */
+            background-color: var(--accent-color); color: var(--flexoki-paper);
+        }
+
+        /* Content Area */
+        .category-section {
+            margin-bottom: 2.5rem; padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .category-section:last-of-type { border-bottom: none; margin-bottom: 0; }
+        .category-section h2 {
+            font-size: 1.8em; border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5em; margin-top: 0; margin-bottom: 1.5rem;
+        }
+
+        /* Styles for Markdown Generated Content */
+        .markdown-content { font-size: 1.05em; line-height: var(--line-height); }
+        .markdown-content p { margin-bottom: 1rem; }
+        .markdown-content ul, .markdown-content ol {
+            margin-left: 1.5rem; margin-bottom: 1rem; padding-left: 1rem;
+        }
+        .markdown-content ul li, .markdown-content ol li { margin-bottom: 0.3rem; }
+        .markdown-content ul { list-style-type: disc; }
+        .markdown-content ol { list-style-type: decimal; }
+        .markdown-content ul ul, .markdown-content ol ol,
+        .markdown-content ul ol, .markdown-content ol ul { margin-top: 0.3rem; margin-bottom: 0.5rem; }
+
+        .markdown-content a, .synthesized-item p a { /* General links in content */
+            color: var(--link-color); text-decoration: none;
+            border-bottom: 1px dotted var(--link-color);
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .markdown-content a:hover, .synthesized-item p a:hover {
+            color: var(--link-hover-color); border-bottom-style: solid;
+        }
+        .markdown-content strong { font-weight: 600; color: var(--text-color); /* Ensure it's the primary text color */ }
+        .markdown-content em { font-style: italic; }
+        .markdown-content blockquote {
+            border-left: 3px solid var(--accent-color); /* Flexoki blue accent */
+            padding: 0.75rem 1.25rem; margin: 1.5rem 0;
+            background-color: var(--flexoki-base-50); /* bg-2 for subtle background */
+            color: var(--muted-text-color); /* Muted text for quotes */
+            font-style: italic; border-radius: 0 3px 3px 0;
+        }
+        .markdown-content blockquote p:last-child { margin-bottom: 0; }
+        .markdown-content hr { border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+
+        .markdown-content code:not(pre code) { /* Inline code */
+            background-color: var(--flexoki-base-100); /* ui - light gray */
+            padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.875em;
+            color: var(--text-color); /* Main text color for readability */
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+        .markdown-content pre { /* Code blocks */
+            background-color: var(--flexoki-base-850); /* Darker Flexoki base for code blocks */
+            color: var(--flexoki-base-200);       /* Light text on dark code block */
+            padding: 1em; overflow-x: auto; border-radius: 4px;
+            margin: 1.5rem 0; font-size: 0.9em;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .markdown-content pre code {
+            background-color: transparent; padding: 0; font-size: inherit;
+            color: inherit; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        }
+        .markdown-content table {
+            width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.95em;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid var(--border-color); padding: 0.6em 0.8em; text-align: left;
+        }
+        .markdown-content th {
+            background-color: var(--flexoki-base-50); /* bg-2 for table headers */
+            font-weight: 600; color: var(--text-color);
+            font-family: var(--font-family-sans);
+        }
+        .markdown-content img {
+            max-width: 100%; height: auto; border-radius: 3px;
+            margin: 1rem auto; display: block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* References block styling */
+        .references {
+            margin-top: 1.5rem; font-size: 0.85em;
+            background-color: var(--flexoki-base-50); /* bg-2, subtle distinction */
+            padding: 1rem 1.25rem; border-radius: 3px;
+            border-left: 3px solid var(--border-color); /* Standard border */
+            color: var(--muted-text-color);
+        }
+        .references strong { color: var(--text-color); font-weight: 600; }
+        .references ul { list-style-type: none; padding-left: 0; margin-bottom: 0; }
+        .references li { margin-bottom: 0.4em; }
+        .references li a { color: var(--link-color); } /* Use standard link color */
+        .references li a:hover { color: var(--link-hover-color); }
+
+        /* Feedback Buttons */
+        .feedback-buttons { margin-top: 1.5rem; }
+        .feedback-buttons span { display: block; margin-bottom: 0.75rem; color: var(--muted-text-color); font-size: 0.9em; }
+        .feedback-buttons button { /* Pico styles this well with var(--pico-primary) */
+            font-size: 0.9em; padding: 0.5em 1em; margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center; padding: 2.5rem 1rem; margin-top: 3rem;
+            background-color: var(--header-bg); /* Match header bg */
+            color: var(--nav-text-color);    /* Match nav text color for muted footer text */
+            font-size: 0.9em;
+            border-top: 3px solid var(--accent-color); /* Flexoki Blue accent */
+        }
+        footer p { margin: 0.3em 0; }
+        footer p:first-child { color: var(--header-text-color); } /* Slightly more prominent copyright */
+
+        /* Inline reference link (arrow icon) styling */
         .inline-ref-arrow-only {
-            text-decoration: none;
-            color: #007bff; /* Color del icono/enlace */
-            margin-left: 3px; /* Pequeño espacio antes del icono */
-            margin-right: 3px;/* Pequeño espacio después del icono */
-            /* vertical-align: middle; /* Podrías necesitar ajustar la alineación vertical */
-            /* display: inline-block; */ /* Para un control más fino si es necesario */
+            text-decoration: none; color: var(--link-color); /* Use link color */
+            margin-left: 2px; margin-right: 2px; display: inline-block;
+            transition: color 0.15s ease;
         }
+        .inline-ref-arrow-only .ref-icon { font-size: 0.9em; line-height: 1; }
+        .inline-ref-arrow-only:hover { color: var(--link-hover-color); opacity: 0.8; }
 
-        .inline-ref-arrow-only .ref-icon {
-            font-size: 1em; /* O el tamaño que desees para la flecha */
-            line-height: 1; /* Ayuda a controlar el espaciado vertical */
-        }
-
-        .inline-ref-arrow-only:hover {
-            text-decoration: none; /* Quizás no quieras subrayado en un icono */
-            opacity: 0.7; /* O algún otro efecto hover */
-        }
     </style>
     
 </head>
 <body>
-    <header>
+    <header role="banner"> <!-- Added role for semantics -->
         <h1>FeedDigest</h1>
-        <p>Edición del 2025-05-15</p>
+        <p>Edición del 2025-05-16</p>
     </header>
 
     
@@ -63,10 +316,10 @@
     </nav>
 
 
-    <div class="container">
+    <main class="container" role="main"> <!-- Added role -->
         <div class="content">
             
-    <p><strong>Fecha de Publicación: 2025-05-15</strong></p>
+    <p><strong>Fecha de Publicación: 2025-05-16</strong></p>
 
     
         
@@ -77,16 +330,22 @@
                     <div class="synthesized-item">
                         <div class="synthesized-item">
                             
-                            <p>La economía del Reino Unido creció más rápido de lo esperado a principios de año <a href="https://www.bbc.com/news/articles/c5yxwre7d9ko" target="_blank" title="Fuente [1]: Reeves says UK 'beginning to turn corner' as growth beats forecasts" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, mientras que las escuelas privadas informaron un aumento del 22% en las tarifas el año pasado <a href="https://www.bbc.com/news/articles/cre9z3133v8o" target="_blank" title="Fuente [6]: Private schools say fees have gone up by 22% in last year" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El Reino Unido también iniciará conversaciones sobre centros de retorno en el extranjero para solicitantes de asilo rechazados <a href="https://www.bbc.com/news/articles/c8re55z8kv7o" target="_blank" title="Fuente [7]: UK to start talks on return hubs for failed asylum seekers" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La policía busca a los padres de bebés abandonados, usando ADN y visitando casas cercanas <a href="https://www.bbc.com/news/articles/cdxvzd729xeo" target="_blank" title="Fuente [8]: Police going door-to-door in DNA hunt for parents of abandoned baby Elsa and siblings" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En Gaza, hay sitios de construcción antes de un controvertido plan de ayuda <a href="https://www.bbc.com/news/articles/ce82ene10p0o" target="_blank" title="Fuente [12]: Construction sites appear in Gaza ahead of Israeli-US aid plan rejected by UN, images show" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, y niños fueron evacuados a Jordania para recibir tratamiento <a href="https://www.bbc.com/news/articles/cg5v2rjp84ro" target="_blank" title="Fuente [2]: BBC joins Gaza children as they are evacuated to Jordan for treatment" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Sirios que regresan a Homs enfrentan una reconstrucción difícil tras años de guerra <a href="https://www.bbc.com/news/articles/clyg20822j7o" target="_blank" title="Fuente [11]: 'I'm overjoyed to be back': Syrians face daunting rebuild after years of war" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Se informó que EE.UU. e Irán están cerca de un acuerdo nuclear <a href="https://www.bbc.com/news/articles/ce3vnnyn709o" target="_blank" title="Fuente [5]: US and Iran close to nuclear deal, Trump says" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, aunque un propuesto acuerdo de aviones entre EE.UU. y Qatar enfrenta oposición <a href="https://www.bbc.com/news/articles/ckg4zk22n9wo" target="_blank" title="Fuente [13]: Trump's critics and supporters unite against Qatar plane deal" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Un documento comprado por $28 ahora se cree que es una copia genuina de la Magna Carta <a href="https://www.bbc.com/news/articles/cm23zjknre7o" target="_blank" title="Fuente [4]: Magna Carta 'copy' bought for $28 now believed to be genuine version" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Una organización benéfica fue informada de que se conocía la identidad del verdadero asesino de Diane Sindall localmente <a href="https://www.bbc.com/news/articles/c2lkd2wn815o" target="_blank" title="Fuente [3]: Identity of Diane Sindall's real killer 'was known on estate'" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En otros temas, la audiencia matutina de Radio 2 disminuyó tras la salida de Zoe Ball <a href="https://www.bbc.com/news/articles/c861w2g71plo" target="_blank" title="Fuente [9]: Radio 2 breakfast audience drops after Zoe Ball's exit" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, y un equipo 'invisible' de Eurovisión tiene 35 segundos para los cambios de escenario <a href="https://www.bbc.com/news/articles/c1e679vn6yqo" target="_blank" title="Fuente [10]: Meet the 'invisible crew' who have 35 seconds to prevent a Eurovision blunder" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            <div class="markdown-content">
+                                <p>La actualidad informativa de hoy está marcada por una diversidad de acontecimientos que abarcan desde sucesos puntuales hasta complejas situaciones humanitarias. Los reportajes analizan incidentes locales y profundizan en las dificultades que afrontan poblaciones en diversas partes del mundo debido a la violencia o los desastres naturales.</p>
+<h4>Crisis humanitarias</h4>
+<p>La compleja realidad de Haití, desgarrado por la violencia de las bandas criminales, es abordada a través de un proyecto multimedia que busca visibilizar las crecientes dificultades de sus más de 11 millones de habitantes <a href="https://www.vaticannews.va/es/mundo/news/2025-05/hijos-de-haiti-un-proyecto-para-no-olvidar-la-tragedia-de-una-ti.html" target="_blank" title="Fuente 2: «Hijos de Haití», un proyecto para no olvidar la tragedia de una tierra" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Este esfuerzo periodístico pretende recordar la tragedia que vive la nación caribeña <a href="https://www.vaticannews.va/es/mundo/news/2025-05/hijos-de-haiti-un-proyecto-para-no-olvidar-la-tragedia-de-una-ti.html" target="_blank" title="Fuente 2: «Hijos de Haití», un proyecto para no olvidar la tragedia de una tierra" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Mientras tanto, Somalia enfrenta una devastadora situación con al menos 17 fallecidos a causa de las inundaciones en el norte, sur y centro del país <a href="https://www.vaticannews.va/es/mundo/news/2025-05/lluvias-e-inundaciones-devastan-somalia.html" target="_blank" title="Fuente 3: Lluvias e inundaciones devastan Somalia" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La ONU señala que, paradójicamente, otras zonas del mismo país sufren sequía y calor, poniendo en peligro los recursos en un contexto de décadas de inestabilidad social y económica <a href="https://www.vaticannews.va/es/mundo/news/2025-05/lluvias-e-inundaciones-devastan-somalia.html" target="_blank" title="Fuente 3: Lluvias e inundaciones devastan Somalia" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Noticias destacadas</h4>
+<p>En Barcelona, la conductora implicada en el atropello múltiple cerca del estadio del RCD Espanyol ha dado negativo en las pruebas de alcohol y drogas <a href="https://elpais.com/espana/catalunya/2025-05-16/la-conductora-del-atropello-multiple-cerca-del-campo-del-rcd-espanyol-da-negativo-en-alcohol-y-drogas.html" target="_blank" title="Fuente 1: La conductora del atropello múltiple cerca del campo del RCD Espanyol da negativo en alcohol y drogas" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            </div>
                             
                         </div>
                     </div>
                 
-                <div class="feedback-buttons">
+                <!--<div class="feedback-buttons">
                     <span>¿Te gustó esta sección?</span>
                     <button onclick="handleFeedback('Noticias', 'up')">👍</button>
                     <button onclick="handleFeedback('Noticias', 'down')">👎</button>
-                </div>
+                </div>-->
             </section>
             
         
@@ -97,36 +356,56 @@
                     <div class="synthesized-item">
                         <div class="synthesized-item">
                             
-                            <p>Hedra (video generation app) raised $32M from a16z <a href="https://techcrunch.com/2025/05/15/hedra-the-app-used-to-make-talking-baby-podcasts-raises-32m-from-a16z/" target="_blank" title="Fuente [3]: Hedra, the app used to make talking baby podcasts, raises $32M from a16z" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, while Harvey AI reportedly discusses a $250M raise valuing it at $5B <a href="https://techcrunch.com/2025/05/15/harvey-reportedly-in-discussions-to-raise-250m-at-5b-valuation/" target="_blank" title="Fuente [4]: Harvey reportedly in discussions to raise $250M at $5B valuation" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Foxconn secured approval for a $435M project in India for Apple chip production <a href="https://techcrunch.com/2025/05/14/foxconn-gets-nod-for-435m-project-to-make-more-of-apple-chips-in-india-eventually/" target="_blank" title="Fuente [13]: Foxconn gets nod for $435M project to make more of Apple chips in India, eventually" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Major tech platforms announced updates: YouTube introduced shoppable TV ads <a href="https://techcrunch.com/2025/05/14/youtube-introduces-an-interactive-product-feed-for-shoppable-tv-ads/" target="_blank" title="Fuente [6]: YouTube introduces an interactive product feed for shoppable TV ads" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, "Peak Points" ads after key moments <a href="https://techcrunch.com/2025/05/14/youtube-viewers-will-start-seeing-ads-after-peak-moments-in-videos/" target="_blank" title="Fuente [8]: YouTube viewers will start seeing ads after ‘peak’ moments in videos" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, and seeks TV ad revenue with an NFL deal and creator shows <a href="https://techcrunch.com/2025/05/14/youtube-targets-tv-dollars-with-nfl-deal-bingeable-shows-from-creators/" target="_blank" title="Fuente [7]: YouTube targets TV dollars with NFL deal, bingeable ‘shows’ from creators" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Netflix is adding more live TV content <a href="https://techcrunch.com/2025/05/14/netflix-adds-more-live-tv-to-its-lineup/" target="_blank" title="Fuente [10]: Netflix adds more live TV to its lineup" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, and Apple Maps updated with guide recommendations in the U.S. <a href="https://techcrunch.com/2025/05/14/the-latest-apple-maps-update-will-bring-out-your-bougie-side/" target="_blank" title="Fuente [9]: The latest Apple Maps update will bring out your bougie side" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. In AI, OpenAI released GPT-4.1 models for ChatGPT <a href="https://techcrunch.com/2025/05/14/openai-brings-its-gpt-4-1-models-to-chatgpt/" target="_blank" title="Fuente [15]: OpenAI brings its GPT-4.1 models to ChatGPT" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, and Grok reportedly discussed South African "white genocide" unpromptedly due to a bug <a href="https://techcrunch.com/2025/05/14/grok-is-unpromptedly-telling-x-users-about-south-african-genocide/" target="_blank" title="Fuente [12]: Grok is unpromptedly telling X users about South African ‘white genocide’" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Waymo recalled 1,200 robotaxis following minor collisions <a href="https://techcrunch.com/2025/05/14/waymo-recalls-1200-robotaxis-following-low-speed-collisions-with-gates-and-chains/" target="_blank" title="Fuente [11]: Waymo recalls 1,200 robotaxis following low-speed collisions with gates and chains" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Luminar replaced its founder CEO after an ethics inquiry <a href="https://techcrunch.com/2025/05/14/billionaire-founder-of-luminar-replaced-as-ceo-following-ethics-inquiry/" target="_blank" title="Fuente [5]: Billionaire founder of Luminar replaced as CEO following ethics inquiry" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. South Korea postponed a decision on Google moving map data overseas <a href="https://techcrunch.com/2025/05/15/south-korea-delays-decision-on-letting-google-move-hi-res-map-data-overseas/" target="_blank" title="Fuente [2]: South Korea delays decision on letting Google move hi-res map data overseas" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. The Kids Online Safety Act was reintroduced in Congress <a href="https://techcrunch.com/2025/05/14/the-kids-online-safety-act-is-back-with-the-potential-to-change-the-internet/" target="_blank" title="Fuente [14]: The Kids Online Safety Act is back, with the potential to change the internet" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Co-op averted a worse cyber attack by disconnecting systems <a href="https://www.bbc.com/news/articles/cwy382w9eglo" target="_blank" title="Fuente [1]: 'They yanked their own plug': How Co-op averted an even worse cyber attack" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            <div class="markdown-content">
+                                <p>La actualidad tecnológica presenta avances significativos en inteligencia artificial, desde nuevos modelos hasta desafíos éticos, mientras persisten tensiones entre grandes plataformas y desarrolladores. La financiación de startups y las brechas de seguridad también marcan la semana.</p>
+<h4>Inteligencia artificial</h4>
+<p>La inteligencia artificial sigue evolucionando y generando debate. Grok de xAI exhibió una obsesión por el "genocidio blanco en Sudáfrica" en ciertas respuestas, atribuida a una "modificación no autorizada" <a href="https://techcrunch.com/2025/05/15/xai-blames-groks-obsession-with-white-genocide-on-an-unauthorized-modification/" target="_blank" title="Fuente 1: xAI blames Grok’s obsession with white genocide on an ‘unauthorized modification’" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://www.theverge.com/news/668220/grok-white-genocide-south-africa-xai-unauthorized-modification-employee" target="_blank" title="Fuente 18: Grok&#8217;s white genocide fixation caused by &#8216;unauthorized modification&#8217;" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El CEO de OpenAI, Sam Altman, expresó su visión de que ChatGPT pueda recordar "toda tu vida" <a href="https://techcrunch.com/2025/05/15/sam-altmans-goal-for-chatgpt-to-remember-your-whole-life-is-both-exciting-and-disturbing/" target="_blank" title="Fuente 2: Sam Altman’s goal for ChatGPT to remember ‘your whole life’ is both exciting and disturbing" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, un objetivo que suscita tanto entusiasmo como inquietud. Windsurf, una startup de 'vibe-coding', lanzó su propia familia de modelos de IA para ingeniería de software <a href="https://techcrunch.com/2025/05/15/vibe-coding-startup-windsurf-launches-in-house-ai-models/" target="_blank" title="Fuente 3: Vibe-coding startup Windsurf launches in-house AI models" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Una abogada que representa a Anthropic tuvo que disculparse por usar una citación legal inventada por el chatbot Claude <a href="https://techcrunch.com/2025/05/15/anthropics-lawyer-was-forced-to-apologize-after-claude-hallucinated-a-legal-citation/" target="_blank" title="Fuente 9: Anthropic’s lawyer was forced to apologize after Claude hallucinated a legal citation" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Cognichip busca utilizar IA generativa para acelerar el desarrollo de nuevos chips <a href="https://techcrunch.com/2025/05/15/cognichip-emerges-from-stealth-with-the-goal-of-using-generative-ai-to-develop-new-chips/" target="_blank" title="Fuente 11: Cognichip emerges from stealth with the goal of using generative AI to develop new chips" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Google ha incorporado nuevas funciones de IA y accesibilidad en Android y Chrome, permitiendo a TalkBack consultar a Gemini sobre imágenes y contenido en pantalla <a href="https://techcrunch.com/2025/05/15/google-rolls-out-new-ai-and-accessibility-features-to-android-and-chrome/" target="_blank" title="Fuente 12: Google rolls out new AI and accessibility features to Android and Chrome" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Microsoft ha visto despidos que afectaron principalmente a programadores en su estado natal <a href="https://techcrunch.com/2025/05/15/programmers-bore-the-brunt-of-microsofts-layoffs-in-its-home-state-as-ai-writes-up-to-30-of-its-code/" target="_blank" title="Fuente 8: Programmers bore the brunt of Microsoft’s layoffs in its home state as AI writes up to 30% of its code" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, mientras la IA ya escribe hasta el 30% de su código <a href="https://techcrunch.com/2025/05/15/programmers-bore-the-brunt-of-microsofts-layoffs-in-its-home-state-as-ai-writes-up-to-30-of-its-code/" target="_blank" title="Fuente 8: Programmers bore the brunt of Microsoft’s layoffs in its home state as AI writes up to 30% of its code" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Startups como Doji utilizan avatares de IA para hacer divertidas las pruebas virtuales de ropa <a href="https://techcrunch.com/2025/05/15/doji-raises-14m-to-make-virtual-try-ons-fun-through-ai-avatars/" target="_blank" title="Fuente 16: Doji raises $14M to make virtual try-ons fun through AI avatars" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Plataformas y software</h4>
+<p>Se mantienen las fricciones en el ecosistema de aplicaciones. Apple está mostrando advertencias en la App Store de la UE para listados que usan sistemas de pago de terceros <a href="https://techcrunch.com/2025/05/15/viral-outrage-over-apples-eu-payment-warnings-misses-key-fact/" target="_blank" title="Fuente 4: Viral outrage over Apple’s EU payment warnings misses key fact" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El conflicto entre Epic Games y Apple continúa, con Fortnite quedando no disponible mundialmente en iOS después de que Apple supuestamente bloqueara su retorno <a href="https://www.theverge.com/news/668232/fortnite-ios-unavailable-worldwide-apple-epic" target="_blank" title="Fuente 17: Fortnite for iOS is unavailable worldwide" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, lo que llevó al CEO de Epic, Tim Sweeney, a criticar a Apple por permitir "fakes" de Fortnite en la App Store <a href="https://www.theverge.com/news/668101/apple-epic-games-fortnite-tim-sweeney-app-store-fakes" target="_blank" title="Fuente 21: Tim Sweeney is mocking Apple for letting Fortnite fakes into the App Store" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Apple ha lanzado finalmente su software CarPlay de próxima generación, "CarPlay Ultra", comenzando con vehículos Aston Martin <a href="https://techcrunch.com/2025/05/15/apple-finally-launches-next-gen-carplay-ultra-software-starting-with-aston-martin/" target="_blank" title="Fuente 15: Apple finally launches next-gen ‘CarPlay Ultra’ software, starting with Aston Martin" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En redes sociales, Threads ahora permite a los creadores añadir hasta 5 enlaces a sus perfiles <a href="https://techcrunch.com/2025/05/15/threads-now-lets-creators-add-up-to-5-links-to-profiles-track-clicks/" target="_blank" title="Fuente 14: Threads now lets creators add up to 5 links to profiles, track clicks" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. TikTok ha implementado una función de meditación guiada para ayudar a los usuarios, especialmente adolescentes, a desconectar de la app por la noche <a href="https://techcrunch.com/2025/05/15/tiktok-rolls-out-a-new-meditation-feature-to-help-you-get-off-the-app-and-sleep/" target="_blank" title="Fuente 10: TikTok rolls out a new meditation feature to help you get off the app and sleep" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://www.theverge.com/news/668051/tiktok-guided-meditation-wind-down-10pm" target="_blank" title="Fuente 23: TikTok will show teens guided meditation after 10PM" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Consideraciones sobre tarifas recientes pueden influir en decisiones de reparación de dispositivos como las baterías de iPhone <a href="https://www.theverge.com/apple/667904/trump-tariff-iphone-shortage-battery-repair" target="_blank" title="Fuente 25: Thanks, Trump tariffs, now I gotta replace my phone battery" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Negocios y financiamiento</h4>
+<p>El sector tecnológico atrae inversiones. Redpoint ha recaudado 650 millones de dólares para su décimo fondo de fase inicial <a href="https://techcrunch.com/2025/05/15/redpoint-raises-650m-3-years-after-its-last-big-early-stage-fund/" target="_blank" title="Fuente 6: Redpoint raises $650M 3 years after its last big early-stage fund" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Sprinter Health ha conseguido 55 millones de dólares para expandir su servicio de atención médica a domicilio <a href="https://techcrunch.com/2025/05/15/sprinter-health-raises-55m-to-expand-its-at-home-healthcare-service/" target="_blank" title="Fuente 7: Sprinter Health raises $55M to expand its at-home healthcare service" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Meta ha solicitado a un juez desestimar el caso antimonopolio de la FTC a mitad del juicio, argumentando falta de pruebas <a href="https://www.theverge.com/antitrust/668099/meta-ftc-antitrust-motion-partial-findings-instagram-whatsapp" target="_blank" title="Fuente 19: Meta asks judge to throw out antitrust case mid-trial" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En seguridad, Coinbase reporta que agentes de soporte "deshonestos" ayudaron a robar datos de clientes <a href="https://www.theverge.com/news/667989/coinbase-rogue-support-agent-customer-data-stolen-breach" target="_blank" title="Fuente 24: Coinbase says ‘rogue’ support agents helped steal customer data" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Noticias destacadas individuales</h4>
+<p>Amazon tiene ofertas activas en sus dispositivos Kindle <a href="https://www.theverge.com/21539047/best-amazon-kindle-deals" target="_blank" title="Fuente 20: Here are the best Kindle deals right now" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, así como en varios modelos de Apple Watch <a href="https://www.theverge.com/21289209/best-apple-watch-deals" target="_blank" title="Fuente 22: Here are the best Apple Watch deals available right now" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Se está organizando el evento TechCrunch All Stage 2025 en Boston, que ofrece oportunidades para eventos paralelos <a href="https://techcrunch.com/2025/05/15/host-a-tailored-side-event-at-all-stage-2025-in-boston/" target="_blank" title="Fuente 13: Host a tailored Side Event at All Stage 2025 in Boston" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Rahul Sonwalkar, identificado inicialmente como "Rahul Ligma" durante los despidos de Twitter, es un ingeniero real con una startup de datos de IA utilizada por Harvard <a href="https://techcrunch.com/2025/05/15/fake-fired-twitter-worker-rahul-ligma-is-a-real-engineer-with-an-ai-data-startup-used-by-harvard/" target="_blank" title="Fuente 5: Fake fired Twitter worker ‘Rahul Ligma’ is a real engineer with an AI data startup used by Harvard" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            </div>
                             
                         </div>
                     </div>
                 
-                <div class="feedback-buttons">
+                <!--<div class="feedback-buttons">
                     <span>¿Te gustó esta sección?</span>
                     <button onclick="handleFeedback('Tecnología', 'up')">👍</button>
                     <button onclick="handleFeedback('Tecnología', 'down')">👎</button>
-                </div>
+                </div>-->
             </section>
             
         
             
-            <section class="category-section" id="section-curiosidades">
-                <h2>Curiosidades</h2>
+            <section class="category-section" id="section-religión">
+                <h2>Religión</h2>
                 
                     <div class="synthesized-item">
                         <div class="synthesized-item">
                             
-                            <p>Una familia que pretendía plantar vegetales en su jardín <a href="https://www.bbc.com/news/articles/cj930k9ew74o" target="_blank" title="Fuente [1]: Vegetable plot dig unearths crop of vintage bottles" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a> desenterró inesperadamente un millar de botellas antiguas <a href="https://www.bbc.com/news/articles/cj930k9ew74o" target="_blank" title="Fuente [1]: Vegetable plot dig unearths crop of vintage bottles" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El descubrimiento ocurrió durante las labores de preparación del terreno para el cultivo.</p>
+                            <div class="markdown-content">
+                                <p>La categoría 'Religión' presenta una semana marcada por el inicio del pontificado de León XIV <a href="https://www.vaticannews.va/es/papa/news/2025-05/la-primera-semana-con-el-papa-leon-xiv.html" target="_blank" title="Fuente 10: La semana del Papa León XIV" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, quien ha mantenido encuentros clave y esbozado las líneas de su diplomacia <a href="https://www.vaticannews.va/es/papa/news/2025-05/conversacion-telefonica-entre-meloni-y-leon-xiv.html" target="_blank" title="Fuente 9: Conversación entre Meloni y León XIV: Italia apoya esfuerzos de paz del Vaticano" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://www.religiondigital.org/vaticano/Discurso-Cuerpo-Diplomatico-Papa-paz-justicia-verdad-tierra-santa-ucrania-dialogo_0_2779822001.html" target="_blank" title="Fuente 17: "Paz, justicia y verdad": las tres claves de León XIV para la diplomacia de la Santa Sede" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Paralelamente, la Iglesia se prepara para eventos importantes como el Jubileo de las Cofradías <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-cofradias-se-esperan-unos-100-mil-fieles-en-roma.html" target="_blank" title="Fuente 5: Jubileo de las Cofradías: Se esperan unos 100 mil fieles en Roma" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a> y reflexiona sobre el impacto de la tecnología y los desafíos sociales en diversas regiones <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/la-ia-una-respuesta-desde-la-iglesia-latinoamericana.html" target="_blank" title="Fuente 6: La IA, una respuesta desde la Iglesia Latinoamericana" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://www.vaticannews.va/es/iglesia/news/2025-05/conferencia-episcopal-panamena-llama-a-la-sensatez-y-al-dialogo.html" target="_blank" title="Fuente 8: La Conferencia Episcopal Panameña llama a la sensatez y al diálogo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>El Pontificado de León XIV</h4>
+<p>La primera semana de León XIV como Papa ha sido intensa <a href="https://www.vaticannews.va/es/papa/news/2025-05/la-primera-semana-con-el-papa-leon-xiv.html" target="_blank" title="Fuente 10: La semana del Papa León XIV" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Proveniente de Trujillo, Perú, donde su dedicación a los jóvenes dejó huella <a href="https://www.vaticannews.va/es/papa/news/2025-05/leon-xiv-un-ex-feligres-su-amor-cambiaba-el-corazon-y-la-vida.html" target="_blank" title="Fuente 4: León XIV, un ex feligrés: “Su amor cambiaba el corazón y la vida"" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, el Pontífice ha recibido al arzobispo greco-católico ucraniano, Sviatoslav Shevchuk, manifestándole cercanía y apoyo <a href="https://www.vaticannews.va/es/papa/news/2025-05/leon-recibe-jefe-iglesia-greco-catolica-ucraniana-shevchuk.html" target="_blank" title="Fuente 3: León XIV recibe al arzobispo de la Iglesia greco-católica ucraniana" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://www.religiondigital.org/vaticano/Leon-XIV-Sviatoslav-Shevchuk-ucrania_0_2779821995.html" target="_blank" title="Fuente 19: León XIV recibe a Shevchuk, y le manifiesta su cercanía y apoyo al pueblo ucraniano" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a> y recibiendo un cuadro sobre el dolor del pueblo ucraniano <a href="https://www.vaticannews.va/es/papa/news/2025-05/leon-recibe-jefe-iglesia-greco-catolica-ucraniana-shevchuk.html" target="_blank" title="Fuente 3: León XIV recibe al arzobispo de la Iglesia greco-católica ucraniana" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. También conversó con la primer ministro italiana <a href="https://www.vaticannews.va/es/papa/news/2025-05/conversacion-telefonica-entre-meloni-y-leon-xiv.html" target="_blank" title="Fuente 9: Conversación entre Meloni y León XIV: Italia apoya esfuerzos de paz del Vaticano" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, quien apoyó los esfuerzos de paz del Vaticano <a href="https://www.vaticannews.va/es/papa/news/2025-05/conversacion-telefonica-entre-meloni-y-leon-xiv.html" target="_blank" title="Fuente 9: Conversación entre Meloni y León XIV: Italia apoya esfuerzos de paz del Vaticano" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La paz, la justicia y la verdad son claves en su diplomacia <a href="https://www.religiondigital.org/vaticano/Discurso-Cuerpo-Diplomatico-Papa-paz-justicia-verdad-tierra-santa-ucrania-dialogo_0_2779822001.html" target="_blank" title="Fuente 17: "Paz, justicia y verdad": las tres claves de León XIV para la diplomacia de la Santa Sede" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, abogando por el respeto a la libertad religiosa y la revitalización del multilateralismo <a href="https://www.religiondigital.org/vaticano/Discurso-Cuerpo-Diplomatico-Papa-paz-justicia-verdad-tierra-santa-ucrania-dialogo_0_2779822001.html" target="_blank" title="Fuente 17: "Paz, justicia y verdad": las tres claves de León XIV para la diplomacia de la Santa Sede" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Se le ha nombrado obispo auxiliar en Perú <a href="https://www.vaticannews.va/es/papa/news/2025-05/papa-leon-xiv-nombramiento-obispo-auxiliar-callao.html" target="_blank" title="Fuente 14: El Papa León XIV nombra obispo auxiliar del Callao, en Perú" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, mientras circulan desinformaciones sobre su figura <a href="https://www.religiondigital.org/ecos_del_mundo/Leon-XIV-frases-cuentas-contexto_0_2779222077.html" target="_blank" title="Fuente 20: Los bulos sobre León XIV: frases que nunca dijo, cuentas falsas y vídeos fuera de contexto" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Actividades y Eventos Vaticanos</h4>
+<p>Roma se prepara para acoger a unos 100 mil fieles de un centenar de países para el Jubileo de las Cofradías <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-cofradias-se-esperan-unos-100-mil-fieles-en-roma.html" target="_blank" title="Fuente 5: Jubileo de las Cofradías: Se esperan unos 100 mil fieles en Roma" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Las actividades incluyen peregrinaciones y un encuentro con cofradías romanas <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-cofradias-se-esperan-unos-100-mil-fieles-en-roma.html" target="_blank" title="Fuente 5: Jubileo de las Cofradías: Se esperan unos 100 mil fieles en Roma" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Imágenes de Sevilla y Málaga ya se exponen para la veneración <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-cofradias-jose-luis-aldea-un-reconocimiento-pieda.html" target="_blank" title="Fuente 13: Jubileo de las Cofradías. José Luis Aldea: Un reconocimiento a la Piedad Popular" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, reconociendo la piedad popular <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/jubileo-de-las-cofradias-jose-luis-aldea-un-reconocimiento-pieda.html" target="_blank" title="Fuente 13: Jubileo de las Cofradías. José Luis Aldea: Un reconocimiento a la Piedad Popular" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En el ámbito cultural, la Bienal de Arquitectura en Venecia cuenta con un pabellón de la Santa Sede <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/bienal-arquitectura-taller-opera-aperta-santa-sede.html" target="_blank" title="Fuente 12: Bienal de Arquitectura, la «Opera Aperta» de la Santa Sede, taller de participación" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, descrito como un taller de participación <a href="https://www.vaticannews.va/es/vaticano/news/2025-05/bienal-arquitectura-taller-opera-aperta-santa-sede.html" target="_blank" title="Fuente 12: Bienal de Arquitectura, la «Opera Aperta» de la Santa Sede, taller de participación" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>La Iglesia en el Mundo y sus Desafíos</h4>
+<p>En China, se han inaugurado dos nuevas iglesias consagradas por obispos locales <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/china-se-inauguran-dos-nuevas-iglesias-en-xiaogan-y-guzhai.html" target="_blank" title="Fuente 1: China: Inauguradas dos nuevas iglesias en Xiaogan y Guzhai" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La Conferencia Episcopal Panameña ha llamado a la sensatez y el diálogo ante la tensión social <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/conferencia-episcopal-panamena-llama-a-la-sensatez-y-al-dialogo.html" target="_blank" title="Fuente 8: La Conferencia Episcopal Panameña llama a la sensatez y al diálogo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Obispos europeos y africanos instan al respeto mutuo y la promoción del desarrollo en África <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/comece-y-secam-africa-no-es-un-campo-de-batalla-para-intereses.html" target="_blank" title="Fuente 15: Comece y Secam: África no es un campo de batalla para intereses" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La Iglesia Latinoamericana, a través del CELAM, ha publicado una investigación sobre la Inteligencia Artificial para guiar la pastoral <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/la-ia-una-respuesta-desde-la-iglesia-latinoamericana.html" target="_blank" title="Fuente 6: La IA, una respuesta desde la Iglesia Latinoamericana" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Noticias Destacadas</h4>
+<p>Las monjas agustinas de Casia han compuesto una oración para el Papa León XIV <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/las-monjas-agustinas-de-casia-escriben-una-oracion-para-leon-xiv.html" target="_blank" title="Fuente 2: Las monjas agustinas de Casia escriben una oración para León XIV" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Se ha presentado una "versión popular" del Documento final del Sínodo, adaptada para uso comunitario <a href="https://www.vaticannews.va/es/iglesia/news/2025-05/version-popular-del-documento-final-del-sinodo.html" target="_blank" title="Fuente 7: “Versión popular” del Documento final del Sínodo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El cardenal Parolin considera "prematuro" hablar de una visita papal a Kiev, señalando que el mecanismo de repatriación de niños ucranianos sigue activo <a href="https://www.religiondigital.org/vaticano/Parolin-prematuro-Leon-XIV-Kiev-ucrania-gaza-rusia_0_2779821993.html" target="_blank" title="Fuente 18: Parolin ve "prematuro" hablar de una visita de León XIV a Kiev" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            </div>
                             
                         </div>
                     </div>
                 
-                <div class="feedback-buttons">
+                <!--<div class="feedback-buttons">
                     <span>¿Te gustó esta sección?</span>
-                    <button onclick="handleFeedback('Curiosidades', 'up')">👍</button>
-                    <button onclick="handleFeedback('Curiosidades', 'down')">👎</button>
-                </div>
+                    <button onclick="handleFeedback('Religión', 'up')">👍</button>
+                    <button onclick="handleFeedback('Religión', 'down')">👎</button>
+                </div>-->
             </section>
             
         
@@ -137,27 +416,35 @@
                     <div class="synthesized-item">
                         <div class="synthesized-item">
                             
-                            <p>Real Madrid superó al Mallorca con gol decisivo de Jacobo Ramón <a href="https://elpais.com/deportes/futbol/2025-05-14/la-remontada-de-vallejo-y-jacobo-para-el-madrid-alarga-la-liga.html" target="_blank" title="Fuente [1]: La remontada de Vallejo y Jacobo para el Madrid alarga la Liga" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, manteniendo vivas sus opciones en la Liga. El equipo blanco registró 39 tiros y 26 córneres en el encuentro <a href="https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html" target="_blank" title="Fuente [3]: 39 tiros del Real Madrid y 26 córner: “Si hubiéramos hecho esto siempre, se podía hacer una temporada mejor”" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, con una declaración sugiriendo que esta intensidad podría haber mejorado la temporada <a href="https://elpais.com/deportes/futbol/2025-05-14/39-tiros-26-corner-y-jacobo-ramon-de-palomero-si-hubieramos-hecho-esto-en-todos-los-partidos-se-podia-hacer-una-temporada-mejor.html" target="_blank" title="Fuente [3]: 39 tiros del Real Madrid y 26 córner: “Si hubiéramos hecho esto siempre, se podía hacer una temporada mejor”" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. El entrenador Carlo Ancelotti ofreció una rueda de prensa <a href="https://elpais.com/deportes/futbol/2025-05-15/no-eres-tu-ancelotti-soy-yo.html" target="_blank" title="Fuente [2]: No eres tú, Ancelotti: soy yo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En otra noticia de fútbol, Ferran Torres, del Barcelona, fue operado de urgencia de apendicitis <a href="https://elpais.com/deportes/futbol/2025-05-14/ferran-torres-es-operado-de-urgencia-de-apendicitis.html" target="_blank" title="Fuente [4]: Ferran Torres es operado de urgencia de apendicitis" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Fuera del fútbol, los Minnesota Timberwolves alcanzaron por segundo año consecutivo la final del Oeste de la NBA al eliminar a Golden State <a href="https://elpais.com/deportes/baloncesto/2025-05-15/los-timberwolves-avanzan-por-segundo-ano-consecutivo-a-la-final-del-oeste-tras-eliminar-a-golden-state.html" target="_blank" title="Fuente [5]: Los Timberwolves avanzan por segundo año consecutivo a la final del Oeste tras eliminar a Golden State" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, y Carlos Alcaraz venció a Draper en tenis mostrando jerarquía <a href="https://elpais.com/deportes/tenis/2025-05-14/alcaraz-tumba-a-draper-a-base-de-jerarquia.html" target="_blank" title="Fuente [6]: Alcaraz tumba a Draper a base de jerarquía" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            <div class="markdown-content">
+                                <p>La actualidad deportiva se centra en los desenlaces de las competiciones de fútbol, con títulos y clasificaciones en juego, mientras otras disciplinas como el golf, el atletismo y el tenis también ofrecen momentos destacados. Varios equipos alcanzan sus objetivos de temporada, se producen movimientos en el mercado de fichajes y la emoción de la alta competición mantiene el interés de los aficionados en diversos frentes.</p>
+<h4>Campeonato del Fútbol Club Barcelona</h4>
+<p>El Fútbol Club Barcelona se ha proclamado campeón de Liga <a href="https://elpais.com/deportes/futbol/2025-05-15/titulo-y-derbi-llevan-la-firma-de-lamine-el-barcelona-se-corona-campeon-de-liga.html" target="_blank" title="Fuente 1: Título y derbi llevan la firma de Lamine: el Barcelona se corona campeón de Liga" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, un título que el presidente Joan Laporta califica de "histórico" para la temporada <a href="https://elpais.com/deportes/futbol/2025-05-15/joan-laporta-se-confirma-que-esta-temporada-es-historica.html" target="_blank" title="Fuente 2: Joan Laporta: “Se confirma que esta temporada es histórica”" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. La consecución del campeonato ha tenido una firma destacada en el delantero Lamine Yamal <a href="https://elpais.com/deportes/futbol/2025-05-15/titulo-y-derbi-llevan-la-firma-de-lamine-el-barcelona-se-corona-campeon-de-liga.html" target="_blank" title="Fuente 1: Título y derbi llevan la firma de Lamine: el Barcelona se corona campeón de Liga" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a><a href="https://elpais.com/deportes/futbol/2025-05-15/la-generacion-lamine-el-reverdecer-de-la-masia-se-explica-a-traves-del-crecimiento-el-exito-y-la-lectura-del-futbol-asociativo-de-un-chico-de-17-anos.html" target="_blank" title="Fuente 4: La generación Lamine: el reverdecer de La Masia se explica a través del crecimiento, el éxito y la lectura del fútbol asociativo de un chico de 17 años" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, cuyo crecimiento y lectura del juego se asocian al reverdecer de La Masia <a href="https://elpais.com/deportes/futbol/2025-05-15/la-generacion-lamine-el-reverdecer-de-la-masia-se-explica-a-traves-del-crecimiento-el-exito-y-la-lectura-del-futbol-asociativo-de-un-chico-de-17-anos.html" target="_blank" title="Fuente 4: La generación Lamine: el reverdecer de La Masia se explica a través del crecimiento, el éxito y la lectura del fútbol asociativo de un chico de 17 años" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Tras el logro deportivo, los aficionados culés se congregaron en la fuente de Canaletas para celebrar el título liguero <a href="https://elpais.com/deportes/futbol/2025-05-15/canaletas-late-con-el-barcelona-los-aficionados-celebran-la-liga.html" target="_blank" title="Fuente 3: Canaletas late con el Barcelona: los aficionados celebran la Liga" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Otros resultados y movimientos en el fútbol</h4>
+<p>El Athletic Club ha asegurado su clasificación para la Liga de Campeones <a href="https://elpais.com/deportes/futbol/2025-05-15/el-athletic-a-la-champions-a-costa-del-getafe-que-seguira-sufriendo.html" target="_blank" title="Fuente 8: El Athletic, a la Champions; el Getafe seguirá sufriendo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>, mientras que el Getafe continuará en una situación complicada <a href="https://elpais.com/deportes/futbol/2025-05-15/el-athletic-a-la-champions-a-costa-del-getafe-que-seguira-sufriendo.html" target="_blank" title="Fuente 8: El Athletic, a la Champions; el Getafe seguirá sufriendo" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Por otro lado, el Real Madrid ha acordado el pago de la cláusula de 59 millones de euros por Dean Huijsen al Bournemouth <a href="https://elpais.com/deportes/futbol/2025-05-15/el-real-madrid-acuerda-pagar-la-clausula-de-59-millones-por-dean-huijsen-al-bournemouth.html" target="_blank" title="Fuente 5: El Real Madrid acuerda pagar la cláusula de 59 millones por Dean Huijsen al Bournemouth" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En otro encuentro, la actuación de Catena resultó decisiva para disuadir a un Atlético de Madrid <a href="https://elpais.com/deportes/futbol/2025-05-15/el-optimismo-de-catena-disuade-a-un-atletico-melancolico.html" target="_blank" title="Fuente 9: El optimismo de Catena disuade a un Atlético melancólico" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+<h4>Noticias destacadas</h4>
+<p>En el ámbito del golf, Jon Rahm ha logrado superar los desafíos del campo de Quail Hollow <a href="https://elpais.com/deportes/2025-05-15/jon-rahm-sobrevive-a-la-milla-verde-de-quail-hollow.html" target="_blank" title="Fuente 6: Jon Rahm sobrevive a La milla verde de Quail Hollow" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. En el atletismo, se ha vivido un episodio dramático al perderse una carrera de larga distancia a escasos metros de la meta <a href="https://elpais.com/deportes/2025-05-16/asi-se-supera-el-drama-de-perder-una-carrera-de-185-kilometros-a-50-metros-de-meta.html" target="_blank" title="Fuente 7: Así se supera el drama de perder una carrera de 185 kilómetros a 50 metros de meta" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>. Finalmente, en tenis, Sinner mostró su mejor nivel para volar en Roma <a href="https://elpais.com/deportes/tenis/2025-05-15/sinner-vuela-en-roma-con-su-mejor-tenis.html" target="_blank" title="Fuente 10: Sinner vuela en Roma con su mejor tenis" class="inline-ref-arrow-only"><span class="ref-icon">↗</span></a>.</p>
+                            </div>
                             
                         </div>
                     </div>
                 
-                <div class="feedback-buttons">
+                <!--<div class="feedback-buttons">
                     <span>¿Te gustó esta sección?</span>
                     <button onclick="handleFeedback('Deportes', 'up')">👍</button>
                     <button onclick="handleFeedback('Deportes', 'down')">👎</button>
-                </div>
+                </div>-->
             </section>
             
         
     
 
         </div>
-    </div>
+    </main>
 
-    <footer>
+    <footer role="contentinfo"> <!-- Added role -->
         <p>© 2025 FeedDigest. Todos los derechos reservados (o no).</p>
-        <p>Generado el 2025-05-15 12:52:14 UTC</p>
+        <p>Generado el 2025-05-16 12:12:04 UTC</p>
     </footer>
 
     

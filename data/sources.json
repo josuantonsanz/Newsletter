@@ -1,13 +1,6 @@
 {
   "sources": [
     {
-      "url": "https://feeds.bbci.co.uk/news/rss.xml",
-      "name": "BBC News",
-      "default_category": "Noticias",
-      "keywords": [],
-      "blacklist": ["video", "podcast"]
-    },
-    {
       "url": "https://techcrunch.com/feed/",
       "name": "TechCrunch",
       "default_category": "Tecnología",
@@ -44,7 +37,7 @@
     },
     {
       "url": "https://maggieappleton.com/rss.xml",
-      "name": "Religión digital",
+      "name": "Maggie Appleton",
       "default_category": "Curiosidades",
       "include_always": true,
       "keywords": [],
