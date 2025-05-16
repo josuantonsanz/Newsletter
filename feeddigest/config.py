@@ -14,7 +14,7 @@ else:
 
 
 # Rutas base del proyecto
-PROJECT_ROOT = Path(__file__).parent
+PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
 OUTPUT_DIR = PROJECT_ROOT / "output"
