@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 # Cargar variables de entorno desde .env si existe
 # Esto es útil para desarrollo local. En producción (ej. GitHub Actions),
 # las variables de entorno se suelen configurar directamente en la plataforma.
-dotenv_path = Path(__file__).parent / '.env' # Asume que .env está en la raíz del proyecto (un nivel arriba de src/)
+dotenv_path = Path(__file__).parent.parent / '.env' # Asume que .env está en la raíz del proyecto (un nivel arriba de src/)
 if dotenv_path.exists():
     load_dotenv(dotenv_path=dotenv_path)
     print(f"Cargado .env desde: {dotenv_path}") # Para depuración
