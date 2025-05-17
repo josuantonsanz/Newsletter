@@ -34,7 +34,7 @@ jobs:
           LLM_MODEL_CLASSIFICATION_ENV: gemma-3-27b-it
           LLM_MODEL_RELEVANCE_ENV: gemini-2.0-flash
           LLM_MODEL_SYNTHESIS_ENV: gemini-2.5-flash-preview-04-17
-        run: python -m src.main # Ejecutar como módulo desde la raíz
+        run: python -m feeddigest.src.main # Ejecutar como módulo desde la raíz
 
       - name: Configurar Git para commit de historial
         run: |
