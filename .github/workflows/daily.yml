@@ -2,7 +2,7 @@ name: Generar FeedDigest Diario y Semanal
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Todos los días a las 6:00 AM UTC
+    - cron: '0 6 2 * *' # Todos los días a las 6:00 AM UTC
   workflow_dispatch: # Permite ejecución manual desde la pestaña Actions
 
 jobs:
